@@ -1,4 +1,4 @@
-export default function TestimonialCard() {
+const Testimonialcard = () => {
     const testimonials = [
         {name: "Martin Jonnes", post: "CEO, Magenta", content: "Respect customer and co-worker privacy, take pride in every, be fair, honest and knowledgeable while building trust."},
         {name: "Martin Jonnes", post: "CEO, Magenta", content: "Respect customer and co-worker privacy, take pride in every, be fair, honest and knowledgeable while building trust."},
@@ -14,5 +14,7 @@ export default function TestimonialCard() {
                 </div>
             ))}
         </>
-    )
+    );
 }
+ 
+export default Testimonialcard;

@@ -1,4 +1,4 @@
-export default function () {
+const Reachout = () => {
     return (
         <>
             <div className="md:px-32 px-6 md:py-12 py-6 bg-[#084E7A] flex md:justify-around justify-between items-center md:space-x-0 space-x-4">
@@ -8,5 +8,7 @@ export default function () {
                 </button>
             </div>
         </>
-    )
+    );
 }
+ 
+export default Reachout;

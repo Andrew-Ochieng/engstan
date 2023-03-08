@@ -1,3 +1,6 @@
+import Contactdetails from "../components/Contactdetails";
+import Contactform from "../components/Contactform";
+
 const Contact = () => {
     return ( 
         <>
@@ -20,8 +23,8 @@ const Contact = () => {
                 </div>
 
                 <div className="md:mb-24 mb-12 grid sm:grid-cols-2 sm:gap-8 md:gap-16 gap-4 bg-gray-100 md:py-32 py-16 md:px-32 px-6">
-                    <ContactForm />
-                    <ContactDetails />
+                    <Contactform />
+                    <Contactdetails />
                 </div>
 
                 <div>

@@ -1,3 +1,8 @@
+import Chooseus from "../components/Chooseus";
+import Corevalues from "../components/Corevalues";
+import Mission from "../components/Mission";
+import Whoweare from "../components/Whoweare";
+
 const About = () => {
     return ( 
         <>
@@ -19,9 +24,9 @@ const About = () => {
                     </div>
                 </div>
 
-                <WhoWeAre />
+                <Whoweare />
                 <Mission />
-                <CoreValues />
+                <Corevalues />
                 <Chooseus />
             </div>
         </>

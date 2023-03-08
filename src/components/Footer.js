@@ -1,4 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
+    const  year = new Date()
+    const newYear = year.getFullYear()
+
     return ( 
         <>
             <footer className="bg-[#C70B38] opacity-90 md:py-24 py-12 md:px-32 px-8 text-white">

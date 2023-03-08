@@ -1,4 +1,4 @@
-export default function() {
+const Chooseus = () => {
     const items = [
         {icon: <i className="material-icons text-[#C70B38]">ac_unit</i>, title: "Dedicated Customer Care", content: "24x7 onsite and offsite supports round the year"},
         {icon: <i className="material-icons text-[#C70B38]">access_alarm</i>, title: "Reliable Branding", content: "Industrial grade bandwidth management and DPI solutions"},
@@ -19,5 +19,7 @@ export default function() {
                 </div>
             </div>
         </>
-    )
+    );
 }
+ 
+export default Chooseus;

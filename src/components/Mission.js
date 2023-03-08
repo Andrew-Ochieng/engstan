@@ -1,4 +1,4 @@
-export default function() {
+const Mission = () => {
     const missions = [
         {title: "Our Mission", content: "We put every skill we have to it’s limit to ensure that our customers get the best products the market can offer."},
         {title: "Our Vision", content: "Respect customer and co-worker privacy, take pride in every transaction, be fair, honest and knowledgeable while building trust in each and every situation."}
@@ -16,5 +16,7 @@ export default function() {
                 ))}
             </div>
         </>
-    )
+    );
 }
+ 
+export default Mission;

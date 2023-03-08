@@ -1,4 +1,4 @@
-export default function ContactDetails() {
+const Contactdetails = () => {
     const contactInfo = [
         {icon: <i className="material-icons">phone</i>, details: '+254 731 873750'},
         {icon: <i className="material-icons">email</i>, details: 'info@engstantechnologies.com'},
@@ -19,5 +19,7 @@ export default function ContactDetails() {
                 ))}
             </div>
         </>
-    )
+    );
 }
+ 
+export default Contactdetails;

@@ -1,13 +1,9 @@
-import promotional from "../public/promotional.png"
-import Image from "next/image"
-
-
-export default function WhoWeAre() {
-    return (
+const Whoweare = () => {
+    return ( 
         <>
             <div className=" md:px-32 px-6 md:py-16 py-8 grid md:grid-cols-2">
                 <div className="md:mt-0 mt-4">
-                    <Image src={promotional} />
+                    <img src={promotional} />
                 </div>
                 <div>
                     <h1 className="content-title">Who We Are</h1>
@@ -21,5 +17,7 @@ export default function WhoWeAre() {
                 </div>
             </div>
         </>
-    )
+     );
 }
+ 
+export default Whoweare;
