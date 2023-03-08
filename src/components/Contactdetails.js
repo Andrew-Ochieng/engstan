@@ -15,8 +15,8 @@ const Contactdetails = () => {
                 {contactInfo.map((info) => (
                     <div 
                         class="flex items-center rounded-lg bg-white ease-out duration-300 py-6 md:px-8 px-4 shadow-lg hover:shadow-xl">
-                        <span className="bg-gray-100 rounded-full md:py-4 py-3 md:px-5 px-4 text-[#084E7A]">
-                            {info.icon}
+                        <span className="md:text-2xl text-xl bg-gray-100 rounded-full md:p-6 p-4 text-[#084E7A]">
+                            <i>{info.icon}</i>
                         </span>
                         <p class="md:ml-4 ml-2 mt-2 md:text-lg font-light">{info.details}</p>
                     </div>

@@ -1,8 +1,14 @@
+import { BsAlarm } from "react-icons/bs"
+import { BsBellFill } from "react-icons/bs"
+import { MdOutlineAcUnit } from "react-icons/md"
+
+
+
 const Chooseus = () => {
     const items = [
-        {icon: <i className="material-icons text-[#C70B38]">ac_unit</i>, title: "Dedicated Customer Care", content: "24x7 onsite and offsite supports round the year"},
-        {icon: <i className="material-icons text-[#C70B38]">access_alarm</i>, title: "Reliable Branding", content: "Industrial grade bandwidth management and DPI solutions"},
-        {icon: <i className="material-icons text-[#C70B38]">add_alert</i>, title: "Competent Tech Solutions", content: "Industrial grade bandwidth management and DPI solutions"}
+        {icon: <MdOutlineAcUnit />, title: "Dedicated Customer Care", content: "24x7 onsite and offsite supports round the year"},
+        {icon: <BsAlarm />, title: "Reliable Branding", content: "Industrial grade bandwidth management and DPI solutions"},
+        {icon: <BsBellFill />, title: "Competent Tech Solutions", content: "Industrial grade bandwidth management and DPI solutions"}
     ]
     return (
         <>
@@ -11,7 +17,9 @@ const Chooseus = () => {
                 <div className="grid sm:grid-cols-3 md:gap-8 gap-4 md:mt-12 mt-6">
                     {items.map((item) => (
                         <div className="flex flex-col items-center justify-center text-center">
-                            <span className="md:p-6 p-3 md:mb-4 mb-2 bg-gray-200 rounded-full">{item.icon}</span>
+                            <span className="md:p-6 p-3 md:mb-4 mb-2 bg-gray-200 rounded-full text-[#C70B38] md:text-2xl text-xl">
+                                <i>{item.icon}</i>
+                            </span>
                             <h3 className="font-bold md:text-2xl text-lg text-gray-800">{item.title}</h3>
                             <p className="md:text-lg font-light text-gray-600 mt-2">{item.content}</p>
                         </div>
