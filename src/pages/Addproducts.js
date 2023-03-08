@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 const Addproducts = () => {
     const [productName, setProductName] = useState('')
     const [price, setPrice] = useState('')

@@ -1,10 +1,7 @@
-// import Link from "next/link"
-import Image from "next/image"
 import { useState } from "react"
-import loginImg from '../../public/login.png'
+import loginImg from "../assets/login.png"
 
-
-export default function () {
+const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
 
@@ -20,7 +17,7 @@ export default function () {
         <>
             <div className="md:flex justify-center items-center md:my-16 my-12 mx-8">
                 <div className="md:w-1/3 lg:mr-16 md:mr-8">
-                    <Image src={loginImg} alt="" />
+                    <img src={loginImg} alt="" />
                 </div>
 
                 <div className="flex flex-col ">
@@ -53,6 +50,7 @@ export default function () {
                 </div>
             </div>
         </>
-    )
+    );
 }
-
+ 
+export default Login;

@@ -9,20 +9,35 @@ const Products = ({products}) => {
   console.log(plain_products)
   console.log(branded_products)
 
+  const handleAllProducts = () => {
+    alert('diaplay all products')
+    return (
+      <ProductItems products={products} />
+    )
+  }
+
+  const handlePlainProducts = () => {
+    alert('display plain products')
+  }
+
+  const handleBrandedProducts = () => {
+    alert('display branded products')
+  }
+
   return ( 
     <>
       <div className="md:mx-32 mx-6 my-8">
         <div className="bg-[#C70B38] rounded-lg py-2 md:px-12 px-2">
           <div className="flex justify-between items-center space-x-2">
-            {/* <button onClick={handleAllProducts} className="category-btn hover:text-[#084e7aa3]">
+            <button onClick={handleAllProducts} className="category-btn">
                 All Products
-            </button>  */}
-            {/* <button onClick={handlePlainProducts} className="category-btn hover:text-[#084e7aa3]">
+            </button> 
+            <button onClick={handlePlainProducts} className="category-btn">
                 Plain Products
-            </button>  */}
-            {/* <button onClick={handleBrandedProducts} className="category-btn hover:text-[#084e7aa3]">
+            </button> 
+            <button onClick={handleBrandedProducts} className="category-btn">
                 Branded Products
-            </button> */}
+            </button>
           </div>
         </div>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 md:my-16 my-8">

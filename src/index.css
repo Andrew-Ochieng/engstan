@@ -36,7 +36,7 @@
   }
 
   .category-btn {
-    @apply md:text-3xl font-bold rounded-lg py-2 text-white
+    @apply md:text-2xl text-sm font-bold rounded-lg py-2 text-white hover:text-[#084e7aa3] hover:px-2 hover:bg-white my-2
   }
 
 
