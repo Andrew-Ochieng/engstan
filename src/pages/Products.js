@@ -11,7 +11,7 @@ const Products = () => {
             <button onClick={() => setSelectedType('plain')}>Plain Products</button>
             <button onClick={() => setSelectedType('branded')}>Branded Products</button> */}
             
-            <button onClick={() => setSelectedType('all')} className="category-btn hover:text-[#084e7aa3]">
+            {/* <button onClick={() => setSelectedType('all')} className="category-btn hover:text-[#084e7aa3]">
                 All Products
             </button> 
             <button onClick={() => setSelectedType('plain')} className="category-btn hover:text-[#084e7aa3]">
@@ -19,11 +19,11 @@ const Products = () => {
             </button> 
             <button onClick={() => setSelectedType('branded')} className="category-btn hover:text-[#084e7aa3]">
                 Branded Products
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 md:my-16 my-8">
-            {products.map((product) => (
+            {/* {products.map((product) => (
                 <div key={product.id} className="my-4 mx-2 p-1 rounded-lg bg-[#084E7A] shadow-lg hover:shadow-xl">
                   <div>
                     <img src={product.image_url} className='thumb p-2 bg-white rounded-lg '/>
@@ -45,7 +45,7 @@ const Products = () => {
                   </div>
                   
                 </div>
-            ))}
+            ))} */}
         </div>
     </div>
     </>

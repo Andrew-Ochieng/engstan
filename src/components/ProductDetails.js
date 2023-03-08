@@ -1,37 +1,10 @@
-export const getStaticPaths = async () => {
-    const res = await fetch('http://localhost:3000/products')
-    const data = await res.json();
-
-    const paths = data.map((product) => {
-        return {
-            params: {id: product.id.toString()}
-        }
-    })
-
-    return {
-        paths,
-        fallback: false
-    }
-
-}
-
-export const getStaticProps = async (context) => {
-    const id = context.params.id;
-    const res = await fetch('http://localhost:3000/products/' + id)
-    const data = await res.json();
-
-    return {
-        props: {product: data}
-    }
-}
-
-
-export default function Details({product}) {
-  return (
-    <div className='md:mx-32 mx-8'>
-        <div class="grid md:grid-cols-2 grid-cols-1">
-            <div class="p-6">
-                <img class="img" src={product.image_url} alt="product thumb"/>
+const ProductDetails = () => {
+    return ( 
+        <>
+            <div className='md:mx-32 mx-8'>
+                <div class="grid md:grid-cols-2 grid-cols-1">
+                    <div class="p-6">
+                        <img class="img" src={product.image_url} alt="product thumb"/>
             </div>
             <div class="p-6">
                 <h2 class="text-4xl my-6">{ product.productName }</h2>
@@ -61,5 +34,8 @@ export default function Details({product}) {
             </div>
         </div>
     </div>
-  )
+        </>
+     );
 }
+ 
+export default ProductDetails;

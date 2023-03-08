@@ -1,8 +1,12 @@
+import { FaPhone } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
+import { HiOutlineMail } from "react-icons/hi";
+
 const Contactdetails = () => {
     const contactInfo = [
-        {icon: <i className="material-icons">phone</i>, details: '+254 731 873750'},
-        {icon: <i className="material-icons">email</i>, details: 'info@engstantechnologies.com'},
-        {icon: <i className="material-icons">location_on</i>, details: 'Engstan building, Thika Road - Nairobi'},
+        {icon: <FaPhone />, details: '+254 731 873750'},
+        {icon: <HiOutlineMail />, details: 'info@engstantechnologies.com'},
+        {icon: <MdLocationOn />, details: 'Engstan building, Thika Road - Nairobi'},
     ]
 
     return(
