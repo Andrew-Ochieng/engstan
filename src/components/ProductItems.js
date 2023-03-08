@@ -15,7 +15,7 @@ const ProductItems = ({products}) => {
                     </div>
                     <button className="mt-4">
                       <Link 
-                      href={`/products/${product.id}`} 
+                      href={`/${product.id}`} 
                       key={product.id} 
                       className='btn'
                       >

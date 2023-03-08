@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import UseFetch from './components/UseFetch';
 import Login from './pages/Login';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   const { data: products } = UseFetch('http://localhost:3000/products')
@@ -21,6 +22,7 @@ function App() {
           <Route path='/' element={ <Home /> }/>
           <Route path='/about' element={ <About /> }/>
           <Route path='/products' element={ <Products products={products} /> }/>
+          <Route path='/:id' element={ <ProductDetails products={products} /> }/>
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/login' element={ <Login /> }/>
           <Route path='/contact' element={ <Contact /> }/>
