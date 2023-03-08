@@ -1,6 +1,4 @@
-import { useState } from "react"
-
-export default function () {
+const Addproducts = () => {
     const [productName, setProductName] = useState('')
     const [price, setPrice] = useState('')
     const [type, setType] = useState('')
@@ -9,28 +7,29 @@ export default function () {
 
     const handleForm = (e) => {
         e.preventDefault();
+        
         const products = {productName, price, type, avatar, description}
-
         console.log(products)
-           const api = "http://localhost:3000/products"
-            fetch(api, {
-                method: "POST",
-                headers: {"Content-Type":"application/json"},
-                body: JSON.stringify(products)
-          })
-               .then((res) => {
-                console.log(res)
-                  setTimeout(() => { 
-                    alert("You have successfully aadded a new product :)")
 
-                      // clear inputs after submission
-                 setProductName('')
-                      setPrice('')
-                       setType('')
-                     setAvatar('')
-                      setDescription('')
-              }, 2000);
-          }) 
+        const api = "http://localhost:3000/products"
+        fetch(api, {
+            method: "POST",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify(products)
+        })
+            .then((res) => {
+            console.log(res)
+            setTimeout(() => { 
+                alert("You have successfully aadded a new product :)")
+
+                    // clear inputs after submission
+                setProductName('')
+                    setPrice('')
+                    setType('')
+                    setAvatar('')
+                    setDescription('')
+            }, 2000);
+        }) 
 
     }
 
@@ -95,5 +94,7 @@ export default function () {
                 </form>
             </div>
         </>
-    )
+    );
 }
+ 
+export default Addproducts;
