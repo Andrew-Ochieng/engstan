@@ -1,20 +1,25 @@
+import { HiShoppingCart } from "react-icons/hi";
 import { useParams } from "react-router-dom";
 import UseFetch from "./UseFetch";
 
 const ProductDetails = () => {
     const { id } = useParams()
-    const { data: product} = UseFetch('http://localhost:3000/products/' + id)
+    const { data: product, error, isLoading} = UseFetch('http://localhost:3000/products/' + id)
 
     return ( 
         <>
-            <div className='md:mx-32 mx-8'>
-                <div class="grid md:grid-cols-2 grid-cols-1">
-                    <div class="p-6">
-                        <img class="img" src={product.image_url} alt="product thumb"/>
+            <div className='md:mx-32 mx-8 md:mt-16 mt-8 md:mb-32 mb-16'>
+                <h1 className="md:text-3xl text-xl font-semibold md:mb-8 mb-4 text-gray-900">Product {id}</h1>
+                { isLoading && <h4 className="text-pink-500 font-semibold md:text-2xl text-xl">Loading data..</h4>}
+                { error && <h4 className="text-red-500">{ error }</h4>}
+
+                <div className="grid md:grid-cols-2 grid-cols-1">
+                    <div className="p-6">
+                        <img className="img w-full rounded-lg" src={product.image_url} alt="product thumb"/>
                     </div>
-                    <div class="p-6">
-                        <h2 class="text-4xl my-6">{ product.productName }</h2>
-                        <p class="text-xl my-6">Price: ${ product.price }</p>
+                    <div className="p-6">
+                        <h2 className="text-4xl my-6">{ product.productName }</h2>
+                        <p className="text-xl my-6">Price: ${ product.price }</p>
                         <div className="md:mb-10 mb-6">
                             <h3 className="text-gray-800 font-semibold md:text-2xl">Colors:</h3>
                             <div className="grid grid-cols-4 mt-2">
@@ -28,12 +33,12 @@ const ProductDetails = () => {
                         <p class="mb-6 font-light text-md ">{ product.description }</p>
                         <button>
                             <a 
-                                className="btn flex"
+                                className="btn flex items-center space-x-2"
                                 href="https://api.whatsapp.com/send?phone=0731873750" 
                                 method="get" 
                                 target="_blank"
                                 >
-                                <i class="material-icons mr-2">add_shopping_cart</i>
+                                <HiShoppingCart className="text-xl" />
                                 <span >Add to Cart</span>
                             </a>
                         </button>

@@ -21,7 +21,7 @@ const Navbar = () => {
                             <img src={logo} alt="logo" className="w-6 mr-2"/>
                             Engstan Solutions
                         </Link>
-                        <button onClick={() => setOpen((prev) => !prev)} className='md:hidden'>
+                        <button onClick={() => setOpen((prev) => !prev)} className=' sm:hidden text-2xl text-gray-900'>
                             <FaBars />
                         </button>
                     </div>
@@ -47,11 +47,11 @@ const Navbar = () => {
                 {/* mobile-version */}
                 <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0  space-y-8 py-6 px-8 w-full h-screen duration-300 ease-in-out bg-white`}>
                     <div className="flex justify-end">
-                        <button onClick={() => setOpen((prev) => !prev)} className="mb-8 sm:hidden text-2xl text-gray-9 00 text-right">
+                        <button onClick={() => setOpen((prev) => !prev)} className="sm:hidden text-2xl text-gray-900 text-right">
                             <FaTimes />
                         </button> 
                     </div>
-                    <ul className="flex flex-col items-center text-center text-base font-medium">
+                    <ul className="flex flex-col items-center text-base font-medium space-y-8">
                         {navLinks.map((nav) => (
                             <li onClick={() => setOpen((prev) => !prev)} className="navlink md:mx-4 mx-2 md:my-0 my-2">
                                 <Link to={nav.route}>
