@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 
 const AdminItemDetails = ({products}) => {
+    const handleDelete =()=>{
+        fetch(`http://localhost:3000/products${products.id}`, { method: 'DELETE' })
+        .then(response => {
+          if (response.ok) {
+            // remove the product from the UI
+            const updatedProducts = products.filter(product => product.id !== products.id);
+          }
+        });
+    }
     return ( 
         <>
             {products.map((product) => (
@@ -21,7 +30,7 @@ const AdminItemDetails = ({products}) => {
                         More Details 
                       </Link>
                     </button>
-                    <button className="mt-4">
+                    <button className="mt-4" onClick={handleDelete}>
                      Delete 
                     </button>
                   </div>
