@@ -92,6 +92,12 @@ const Addproducts = () => {
                     <button className="btn font-medium bg-[#084E7A] w-full">
                         Add Product
                     </button>
+                    <a 
+                                className="btn flex items-center space-x-2"
+                                href="/adminproducts" 
+                                >
+                                <span >Check Products</span>
+                            </a>
                 </form>
             </div>
         </>

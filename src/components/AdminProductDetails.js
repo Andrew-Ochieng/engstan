@@ -2,7 +2,7 @@ import { HiShoppingCart } from "react-icons/hi";
 import { useParams } from "react-router-dom";
 import UseFetch from "./UseFetch";
 
-const ProductDetails = () => {
+const AdminProductDetails = () => {
     const { id } = useParams()
     const { data: product, error, isLoading} = UseFetch('http://localhost:3000/products/' + id)
 
@@ -50,4 +50,4 @@ const ProductDetails = () => {
      );
 }
  
-export default ProductDetails;
+export default AdminProductDetails;

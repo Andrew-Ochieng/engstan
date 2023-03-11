@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const products = ({products}) => {
+const AdminItemDetails = ({products}) => {
     return ( 
         <>
             {products.map((product) => (
@@ -21,12 +21,14 @@ const products = ({products}) => {
                         More Details 
                       </Link>
                     </button>
+                    <button className="mt-4">
+                     Delete 
+                    </button>
                   </div>
-                  
                 </div>
             ))}
         </>
      );
 }
  
-export default products;
+export default AdminItemDetails;

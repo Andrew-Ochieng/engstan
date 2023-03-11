@@ -10,6 +10,7 @@ import UseFetch from './components/UseFetch';
 import Login from './pages/Login';
 import ProductDetails from './components/ProductDetails';
 import Addproducts from './pages/Addproducts';
+import AdminProduct from './components/AdminProduct';
 function App() {
   const { data: products } = UseFetch('http://localhost:3000/products')
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/login' element={ <Login /> }/>
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/addproducts' element={ <Addproducts /> }/>
+          <Route path='/adminproducts' element={ <AdminProduct products={products} /> }/>
         </Routes>
         <Footer />
       </BrowserRouter>

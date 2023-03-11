@@ -26,7 +26,7 @@ const Login = () => {
             if (res.ok) {
                 const { token } = res.json();
                 sessionStorage.setItem("token", token);
-                navigate("/products");
+                navigate("/addproducts");
               } else {
                 alert("Invalid email or password.");
               }
