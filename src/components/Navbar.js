@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="md:px-32 px-6 py-6 top-0 left-0 sticky z-[100] bg-white shadow-xl"> 
+            <nav className="md:px-32 px-6 py-6 top-0 left-0 static z-[100] bg-white shadow-xl"> 
                 <div className="md:flex justify-between items-center">
                     <div className="flex justify-between items-center">
                         <Link to='/' className="flex items-center justify-center uppercase font-semibold text-[#C70B38] md:text-2xl text-lg">

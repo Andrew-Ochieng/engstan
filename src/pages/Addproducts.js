@@ -3,14 +3,14 @@ import { useState } from "react"
 const Addproducts = () => {
     const [productName, setProductName] = useState('')
     const [price, setPrice] = useState('')
-    const [type, setType] = useState('')
-    const [avatar, setAvatar] = useState('')
+    const [product_type, setType] = useState('')
+    const [image_url, setImage] = useState('')
     const [description, setDescription] = useState('')
 
     const handleForm = (e) => {
         e.preventDefault();
         
-        const products = {productName, price, type, avatar, description}
+        const products = {productName, price, product_type, image_url, description}
         console.log(products)
 
         const api = "http://localhost:3000/products"
@@ -28,7 +28,7 @@ const Addproducts = () => {
                 setProductName('')
                     setPrice('')
                     setType('')
-                    setAvatar('')
+                    setImage('')
                     setDescription('')
             }, 2000);
         }) 
@@ -62,18 +62,17 @@ const Addproducts = () => {
                         />
                     </div>
                     <div className="my-4">
-                        <select className="px-3 py-2 input" required value={type}
+                        <select className="px-3 py-2 input" required value={product_type}
                             onChange={(e) => setType(e.target.value)} >
-                            <option value="plain">Plain</option>
-                            <option value="branded">Branded</option>
+                            <option value="Plain">Plain</option>
+                            <option value="Branded">Branded</option>
                         </select>
                     </div>
                     <div className="my-4">
                         <input 
-                            onChange={(e) => setAvatar(e.target.value)}
-                            value={avatar}
+                            onChange={(e) => setImage(e.target.value)}
+                            value={image_url}
                             className="input" 
-                            type="file" 
                             name="image" 
                             placeholder="Image.."
                             required 
