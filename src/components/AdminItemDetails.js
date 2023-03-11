@@ -29,7 +29,7 @@ const AdminItemDetails = ({products}) => {
                         More Details 
                       </Link>
                     </button>
-                    <button className="mt-4 btn bg-white text-gray" onClick={() => handleDelete(product.id)} >
+                    <button className="mt-4 btn bg-white text-black" onClick={() => handleDelete(product.id)} >
                      Delete 
                     </button>
                   </div>
