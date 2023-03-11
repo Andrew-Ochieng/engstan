@@ -20,12 +20,12 @@ const Categories = () => {
                 <button onClick={handleAll} className="category-btn hover:text-[#084e7aa3]">
                     All Products
                 </button>
-                {/* <button onClick={handlePlain} className="category-btn hover:text-[#084e7aa3]">
+                <button className="category-btn hover:text-[#084e7aa3]">
                     Plain Products
                 </button>
-                <button onClick={handleBranded} className="category-btn hover:text-[#084e7aa3]">
+                <button className="category-btn hover:text-[#084e7aa3]">
                     Branded Products
-                </button> */}
+                </button>
             </div>
         </>
      );
