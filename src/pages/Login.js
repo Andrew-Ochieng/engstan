@@ -1,16 +1,36 @@
-import { useState } from "react"
-import loginImg from "../assets/login.png"
+import { useState } from "react";
+import loginImg from "../assets/login.png";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
+    const [isLoading, setIsLoading] = useState(false);
+    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
-        
-        const login = {username, password} 
-        console.log(login)
-        console.log("User logged in successfully")
+        setIsLoading(true);
+        if (!username || !password) {
+            alert("Please enter your email and password.");
+            return;
+          }
+        const data = { username: username, password: password };
+        fetch("http://localhost:3000/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json"},
+          body: JSON.stringify(data),
+        })
+        .then((res)=>{
+            setIsLoading(false);
+            if (res.ok) {
+                const { token } = res.json();
+                sessionStorage.setItem("token", token);
+                navigate("/products");
+              } else {
+                alert("Invalid email or password.");
+              }
+        })
     }
 
     return (
@@ -44,7 +64,7 @@ const Login = () => {
                             />
                         </div>
                         <button type="submit" className="btn bg-[#084E7A] w-full md:mt-4 mt-2">
-                            Login
+                            {isLoading ? "Loading..." : "Sign in" }
                         </button>
                     </form>
                 </div>
