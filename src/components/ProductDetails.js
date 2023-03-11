@@ -19,9 +19,10 @@ const ProductDetails = () => {
                     </div>
                     <div className="p-6">
                         <h2 className="text-4xl my-6">{ product.productName }</h2>
-                        <p className="text-xl my-6">Price: ${ product.price }</p>
+                        <p className="text-xl my-6">Price: Ksh{ product.price }</p>
                         <div className="md:mb-10 mb-6">
-                            <h3 className="text-gray-800 font-semibold md:text-2xl">Colors:</h3>
+                            <h3 className="text-gray-800 font-semibold md:text-2xl">All Colors Available</h3>
+                            <p className="text-xl my-6 text-green">We do free delivery within Nairobi and small fee outside Nairobi</p>
                             <div className="grid grid-cols-4 mt-2">
                                 <p className="radio-btn bg-black"></p>
                                 <p className="radio-btn bg-red-500"></p>
@@ -34,13 +35,13 @@ const ProductDetails = () => {
                         <button>
                             <a 
                                 className="btn flex items-center space-x-2"
-                                href="https://api.whatsapp.com/send?phone=0731873750" 
+                                href="https://api.whatsapp.com/send?phone=0769188331" 
                                 method="get" 
                                 target="_blank"
                                 rel="noreferrer"
                                 >
                                 <HiShoppingCart className="text-xl" />
-                                <span >Add to Cart</span>
+                                <span >Customize Order</span>
                             </a>
                         </button>
                     </div>

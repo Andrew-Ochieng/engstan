@@ -92,12 +92,14 @@ const Addproducts = () => {
                     <button className="btn font-medium bg-[#084E7A] w-full">
                         Add Product
                     </button>
+                    <div className="flex items-center justify-center mt-4">
                     <a 
-                                className="btn flex items-center space-x-2"
-                                href="/adminproducts" 
+                       className="btn space-x-2"
+                         href="/adminproducts" 
                                 >
                                 <span >Check Products</span>
                             </a>
+                            </div>
                 </form>
             </div>
         </>

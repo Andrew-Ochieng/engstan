@@ -34,7 +34,7 @@ const AdminProductDetails = () => {
                         <button>
                             <a 
                                 className="btn flex items-center space-x-2"
-                                href="https://api.whatsapp.com/send?phone=0731873750" 
+                                href="https://api.whatsapp.com/send?phone=0769188331" 
                                 method="get" 
                                 target="_blank"
                                 rel="noreferrer"

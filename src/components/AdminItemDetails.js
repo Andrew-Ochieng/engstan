@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const AdminItemDetails = ({products}) => {
-    const handleDelete =()=>{
-        fetch(`http://localhost:3000/products${products.id}`, { method: 'DELETE' })
-        .then(response => {
-          if (response.ok) {
-            // remove the product from the UI
-            const updatedProducts = products.filter(product => product.id !== products.id);
-          }
-        });
+    const handleDelete =(id)=>{
+      axios.delete(`http://127.0.0.1:3000/products/${id}`).then((response) => {
+      if (response.status === 204) {
+        alert("You have successfully deleted the product!")
+      }else alert("Product could not be deleted try again later!")
+    });
     }
     return ( 
         <>
@@ -30,7 +29,7 @@ const AdminItemDetails = ({products}) => {
                         More Details 
                       </Link>
                     </button>
-                    <button className="mt-4" onClick={handleDelete}>
+                    <button className="mt-4 btn bg-white text-gray" onClick={() => handleDelete(product.id)} >
                      Delete 
                     </button>
                   </div>
