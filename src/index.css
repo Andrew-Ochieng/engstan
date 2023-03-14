@@ -32,11 +32,11 @@
   }
 
   .radio-btn {
-    @apply p-4 rounded-full w-4
+    @apply md:p-4 p-3 rounded-full w-4
   }
 
   .category-btn {
-    @apply md:text-2xl text-sm font-bold rounded-lg py-2 text-white hover:text-[#084e7aa3] hover:px-2 hover:bg-white my-2
+    @apply md:text-2xl text-sm font-bold rounded-lg py-2 text-white hover:text-[#084e7a] 
   }
 
 

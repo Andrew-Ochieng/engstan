@@ -21,17 +21,19 @@ const AdminItemDetails = ({products}) => {
                       <h2 className="text-gray-300 text-sm font-light">Price: ${ product.price }</h2>
                       <h3 className="font-medium text-white truncate">{product.productName}</h3>
                     </div>
-                    <button className="mt-4">
-                      <Link 
-                      to={`/${product.id}`} 
-                      className='btn'
-                      >
-                        More Details 
-                      </Link>
-                    </button>
-                    <button className="mt-4 btn bg-white text-black" onClick={() => handleDelete(product.id)} >
-                     Delete 
-                    </button>
+                    <div className="space-x-2">
+                      <button className="mt-4">
+                        <Link 
+                        to={`/${product.id}`} 
+                        className='btn'
+                        >
+                          More Details 
+                        </Link>
+                      </button>
+                      <button className="mt-4 btn bg-white text-black" onClick={() => handleDelete(product.id)} >
+                      Delete 
+                      </button>
+                    </div>
                   </div>
                 </div>
             ))}

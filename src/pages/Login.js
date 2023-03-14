@@ -64,7 +64,7 @@ const Login = () => {
                             />
                         </div>
                         <button type="submit" className="btn bg-[#084E7A] w-full md:mt-4 mt-2">
-                            {isLoading ? "Loading..." : "Sign in" }
+                            {isLoading ? "Loading..." : "Login" }
                         </button>
                     </form>
                 </div>

@@ -23,10 +23,14 @@ const ProductDetails = () => {
                         <div className="md:mb-10 mb-6">
                             <h3 className="text-gray-800 font-semibold md:text-2xl">All Colors Available</h3>
                             <p className="text-xl my-6 text-green">We do free delivery within Nairobi and small fee outside Nairobi</p>
-                            <div className="grid grid-cols-4 mt-2">
+                            <div className="grid grid-cols-8 mt-2 gap-6">
                                 <p className="radio-btn bg-black"></p>
                                 <p className="radio-btn bg-red-500"></p>
                                 <p className="radio-btn bg-blue-500"></p>
+                                <p className="radio-btn bg-yellow-500"></p> 
+                                <p className="radio-btn bg-green-500"></p>
+                                <p className="radio-btn bg-purple-500"></p>
+                                <p className="radio-btn bg-pink-500"></p>
                                 <p className="radio-btn bg-yellow-500"></p>    
                             </div>
                         </div>

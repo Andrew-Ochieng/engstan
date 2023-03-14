@@ -4,6 +4,13 @@ const Footer = () => {
     const  year = new Date()
     const newYear = year.getFullYear()
 
+    const footerLink = [
+        {name: "Home", ref: "/"},
+        {name: "About", ref: "/about"},
+        {name: "Products", ref: "/products"},
+        {name: "Contact", ref: "/contact"},
+    ]
+
     return ( 
         <>
             <footer className="bg-[#C70B38] opacity-90 md:py-24 py-12 md:px-32 px-8 text-white">
@@ -14,26 +21,13 @@ const Footer = () => {
 
                     <div className="md:my-0 my-2">
                         <ul className="flex justify-center items-center md:text-base text-sm ">
-                            <li className="navlink md:mx-4 mx-2 text-white font-light">
-                                <Link href='/'>
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="navlink md:mx-4 mx-2 text-white font-light">
-                                <Link href='/about'>
-                                    About
-                                </Link>
-                            </li>
-                            <li className="navlink md:mx-4 mx-2 text-white font-light">
-                                <Link href='/products'>
-                                    Our Products
-                                </Link>
-                            </li>
-                            <li className="navlink md:mx-4 mx-2 text-white font-light">
-                                <Link href='/contact'>
-                                    Contact
-                                </Link>
-                            </li>
+                            {footerLink.map((link) => (
+                                <li className="navlink md:mx-4 mx-2 text-white font-light">
+                                    <Link to={link.ref}>
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
