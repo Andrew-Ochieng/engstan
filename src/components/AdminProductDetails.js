@@ -4,7 +4,7 @@ import UseFetch from "./UseFetch";
 
 const AdminProductDetails = () => {
     const { id } = useParams()
-    const { data: product, error, isLoading} = UseFetch('http://localhost:3000/products/' + id)
+    const { data: product, error, isLoading} = UseFetch('https://engstan-production.up.railway.app/' + id)
 
     return ( 
         <>

@@ -3,7 +3,7 @@ import axios from "axios";
 
 const AdminItemDetails = ({products}) => {
     const handleDelete =(id)=>{
-      axios.delete(`http://127.0.0.1:3000/products/${id}`).then((response) => {
+      axios.delete(`https://engstan-production.up.railway.app/${id}`).then((response) => {
       if (response.status === 204) {
         alert("You have successfully deleted the product!")
       }else alert("Product could not be deleted try again later!")

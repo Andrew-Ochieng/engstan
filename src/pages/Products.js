@@ -12,7 +12,7 @@ const Products = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:3000/products')
+    fetch('https://engstan-production.up.railway.app/products')
     .then((res)=>res.json())
     .then((productsData)=>{
       setProducts(productsData);
