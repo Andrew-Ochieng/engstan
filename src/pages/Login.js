@@ -16,13 +16,15 @@ const Login = () => {
             return;
           }
         const data = { username: username, password: password };
-        fetch("https://engstan-production.up.railway.app/login", {
+        console.log(data)
+        fetch("http://127.0.0.1:3000/login", {
           method: "POST",
           headers: { "Content-Type": "application/json"},
           body: JSON.stringify(data),
         })
         .then((res)=>{
             setIsLoading(false);
+            console.log(res)
             if (res.ok) {
                 const { token } = res.json();
                 sessionStorage.setItem("token", token);
