@@ -12,7 +12,7 @@ const AdminProduct = () => {
 
 
   useEffect(() => {
-    fetch('https://engstan-production.up.railway.app/products')
+    fetch('https://engstanapi-production.up.railway.app/products')
     .then((res)=>res.json())
     .then((productsData)=>{
       setProducts(productsData);

@@ -6,14 +6,15 @@ const Addproducts = () => {
     const [product_type, setType] = useState('')
     const [image_url, setImage] = useState('')
     const [description, setDescription] = useState('')
+    const [brandedimage,setBrandedImage]=useState('')
 
     const handleForm = (e) => {
         e.preventDefault();
         
-        const products = {productName, price, product_type, image_url, description}
+        const products = {productName, price, product_type, image_url, brandedimage, description}
         console.log(products)
 
-        const api = "https://engstan-production.up.railway.app/products"
+        const api = "https://engstanapi-production.up.railway.app/products"
         fetch(api, {
             method: "POST",
             headers: {"Content-Type":"application/json"},
@@ -30,6 +31,7 @@ const Addproducts = () => {
                     setType('')
                     setImage('')
                     setDescription('')
+                    setBrandedImage('')
             }, 2000);
         }) 
 
@@ -64,8 +66,8 @@ const Addproducts = () => {
                     <div className="my-4">
                         <select className="px-3 py-2 input" required value={product_type}
                             onChange={(e) => setType(e.target.value)} >
-                            <option value="Plain">Plain</option>
-                            <option value="Branded">Branded</option>
+                            <option value="Clothings">Clothings</option>
+                            <option value="mechanized">Mechanized</option>
                         </select>
                     </div>
                     <div className="my-4">
@@ -75,6 +77,16 @@ const Addproducts = () => {
                             className="input" 
                             name="image" 
                             placeholder="Image.."
+                            required 
+                        />
+                    </div>
+                    <div className="my-4">
+                        <input 
+                            onChange={(e) => setBrandedImage(e.target.value)}
+                            value={brandedimage}
+                            className="input" 
+                            name="image" 
+                            placeholder="Branded image url"
                             required 
                         />
                     </div>

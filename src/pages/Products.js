@@ -12,7 +12,7 @@ const Products = () => {
 
 
   useEffect(() => {
-    fetch('https://engstan-production.up.railway.app/products')
+    fetch('https://engstanapi-production.up.railway.app/products')
     .then((res)=>res.json())
     .then((productsData)=>{
       setProducts(productsData);
@@ -21,10 +21,10 @@ const Products = () => {
   }, []);
 
   useEffect(() => {
-    if (selectedButton === 'plain') {
-      setFilteredProducts(products.filter(product => product.product_type === 'Plain'));
-    } else if (selectedButton === 'branded') {
-      setFilteredProducts(products.filter(product => product.product_type === 'Branded'));
+    if (selectedButton === 'Clothings') {
+      setFilteredProducts(products.filter(product => product.product_type === 'Clothings'));
+    } else if (selectedButton === 'mechanized') {
+      setFilteredProducts(products.filter(product => product.product_type === 'mechanized'));
     } else {
       setFilteredProducts(products);
     }
@@ -38,11 +38,11 @@ const Products = () => {
             <button onClick={() => setSelectedButton('all')} className="category-btn">
                 All Products
             </button> 
-            <button onClick={() => setSelectedButton('plain')} className="category-btn">
-                Plain Products
+            <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
+            Clothings
             </button> 
-            <button onClick={() => setSelectedButton('branded')}  className="category-btn">
-                Branded Products
+            <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
+            Merchandised Products
             </button>
           </div>
         </div>

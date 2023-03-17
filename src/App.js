@@ -12,7 +12,7 @@ import ProductDetails from './components/ProductDetails';
 import Addproducts from './pages/Addproducts';
 import AdminProduct from './components/AdminProduct';
 function App() {
-  const { data: products } = UseFetch('https://engstan-production.up.railway.app/products')
+  const { data: products } = UseFetch('https://engstanapi-production.up.railway.app/products')
 
   console.log(products)
   return (

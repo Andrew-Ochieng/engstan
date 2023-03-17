@@ -4,7 +4,7 @@ import UseFetch from "./UseFetch";
 
 const AdminProductDetails = () => {
     const { id } = useParams()
-    const { data: product, error, isLoading} = UseFetch('https://engstan-production.up.railway.app/' + id)
+    const { data: product, error, isLoading} = UseFetch('https://engstanapi-production.up.railway.app/' + id)
 
     return ( 
         <>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import loginImg from "../assets/login.png";
 import { useNavigate } from "react-router-dom";
 
+
 const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -17,7 +18,7 @@ const Login = () => {
           }
         const data = { username: username, password: password };
         console.log(data)
-        fetch("http://127.0.0.1:3000/login", {
+        fetch("https://engstanapi-production.up.railway.app/login", {
           method: "POST",
           headers: { "Content-Type": "application/json"},
           body: JSON.stringify(data),

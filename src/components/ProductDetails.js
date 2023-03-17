@@ -4,7 +4,7 @@ import UseFetch from "./UseFetch";
 
 const ProductDetails = () => {
     const { id } = useParams()
-    const { data: product, error, isLoading} = UseFetch('https://engstan-production.up.railway.app/products/' + id)
+    const { data: product, error, isLoading} = UseFetch('https://engstanapi-production.up.railway.app/products/' + id)
 
     return ( 
         <>
@@ -15,7 +15,12 @@ const ProductDetails = () => {
 
                 <div className="grid md:grid-cols-2 grid-cols-1">
                     <div className="p-6">
+                    <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Before</h5>
                         <img className="img w-full rounded-lg" src={product.image_url} alt="product thumb"/>
+                    </div>
+                    <div className="p-6">
+                    <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">After</h5>
+                        <img className="img w-full rounded-lg" src={product.brandedimage} alt="product thumb"/>
                     </div>
                     <div className="p-6">
                         <h2 className="text-4xl my-6">{ product.productName }</h2>
@@ -39,7 +44,7 @@ const ProductDetails = () => {
                         <button>
                             <a 
                                 className="btn flex items-center space-x-2"
-                                href="https://api.whatsapp.com/send?phone=0769188331" 
+                                href="https://api.whatsapp.com/send?phone=254769188331" 
                                 method="get" 
                                 target="_blank"
                                 rel="noreferrer"
