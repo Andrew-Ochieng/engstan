@@ -39,11 +39,11 @@ const Footer = () => {
                               <FaFacebook size={32} />
                             </a>
                             <a href="https://twitter.com/" className="ml-4 text-blue-500 hover:text-white">
-                            <p>engstan_solutions</p>
+                            <p>engstan solutions</p>
                               <FaTwitter size={32} />
                             </a>
                             <a href="https://www.instagram.com/engstan_solutions/" className="ml-4 text-purple-500 hover:text-white">
-                            <p>@engstan_solutions</p>
+                            <p>@engstan solutions</p>
                               <FaInstagram size={32} />
                             </a>
                            </span>
