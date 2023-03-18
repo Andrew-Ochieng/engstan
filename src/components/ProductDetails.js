@@ -15,19 +15,20 @@ const ProductDetails = () => {
 
                 <div className="grid md:grid-cols-2 grid-cols-1">
                     <div className="p-6">
-                    <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Before</h5>
+                    <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Plain</h5>
+                    <p className="text-xl my-6">Price: Ksh{ product.Plain_price }</p>
                         <img className="img w-full rounded-lg" src={product.image_url} alt="product thumb"/>
                     </div>
                     <div className="p-6">
-                    <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">After</h5>
+                    <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Branded</h5>
+                    <p className="text-xl my-6">Price: Ksh{ product.Branded_price }</p>
                         <img className="img w-full rounded-lg" src={product.brandedimage} alt="product thumb"/>
                     </div>
                     <div className="p-6">
                         <h2 className="text-4xl my-6">{ product.productName }</h2>
-                        <p className="text-xl my-6">Price: Ksh{ product.price }</p>
                         <div className="md:mb-10 mb-6">
-                            <h3 className="text-gray-800 font-semibold md:text-2xl">All Colors Available</h3>
-                            <p className="text-xl my-6 text-green">We do free delivery within Nairobi and small fee outside Nairobi</p>
+                        <h6 className="text-xl my-6 text-green">We do free delivery within Nairobi and small fee outside Nairobi</h6>
+                            <p className="text-green-800 font-semibold md:text-2xl">All Colors Available</p>
                             <div className="grid grid-cols-8 mt-2 gap-6">
                                 <p className="radio-btn bg-black"></p>
                                 <p className="radio-btn bg-red-500"></p>

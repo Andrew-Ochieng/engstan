@@ -10,7 +10,7 @@ const products = ({products}) => {
                   </div>
                   <div className="py-4 px-3 mt-2">
                     <div>
-                      <h2 className="text-gray-300 text-sm font-light">Price: ${ product.price }</h2>
+                      <h2 className="text-gray-300 text-sm font-light">Price: Ksh { product.price }</h2>
                       <h3 className="font-medium text-white truncate">{product.productName}</h3>
                     </div>
                     <button className="mt-4">
