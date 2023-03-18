@@ -21,10 +21,10 @@ const AdminProduct = () => {
   }, []);
 
   useEffect(() => {
-    if (selectedButton === 'plain') {
-      setFilteredProducts(products.filter(product => product.product_type === 'Plain'));
-    } else if (selectedButton === 'branded') {
-      setFilteredProducts(products.filter(product => product.product_type === 'Branded'));
+    if (selectedButton === 'Clothings') {
+      setFilteredProducts(products.filter(product => product.product_type === 'Clothings'));
+    } else if (selectedButton === 'mechanized') {
+      setFilteredProducts(products.filter(product => product.product_type === 'mechanized'));
     } else {
       setFilteredProducts(products);
     }
@@ -35,14 +35,14 @@ const AdminProduct = () => {
       <div className="md:mx-32 mx-6 my-8">
         <div className="bg-[#C70B38] rounded-lg py-2 md:px-12 px-2">
           <div className="flex justify-between items-center space-x-2">
-            <button onClick={() => setSelectedButton('all')} className="category-btn">
+            {/* <button onClick={() => setSelectedButton('all')} className="category-btn">
                 All Products
+            </button>  */}
+            <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
+                Clothing and branding
             </button> 
-            <button onClick={() => setSelectedButton('plain')} className="category-btn">
-                Plain Products
-            </button> 
-            <button onClick={() => setSelectedButton('branded')}  className="category-btn">
-                Branded Products
+            <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
+                Other branding services
             </button>
           </div>
         </div>

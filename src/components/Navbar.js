@@ -9,7 +9,7 @@ const Navbar = () => {
     const navLinks = [
         {name: "Home", route: "/home"},
         {name: "About", route: "/about"},
-        {name: "Products", route: "/"}
+        {name: "Products and Services", route: "/"}
     ]
 
     return (

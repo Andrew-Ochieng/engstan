@@ -2,7 +2,8 @@ import { useState } from "react"
 
 const Addproducts = () => {
     const [productName, setProductName] = useState('')
-    const [price, setPrice] = useState('')
+    const [Plain_price, setPrice] = useState('')
+    const [Branded_price, setBPrice] = useState('')
     const [product_type, setType] = useState('')
     const [image_url, setImage] = useState('')
     const [description, setDescription] = useState('')
@@ -11,7 +12,7 @@ const Addproducts = () => {
     const handleForm = (e) => {
         e.preventDefault();
         
-        const products = {productName, price, product_type, image_url, brandedimage, description}
+        const products = {productName, Plain_price, Branded_price, product_type, image_url, brandedimage, description}
         console.log(products)
 
         const api = "https://engstanapi-production.up.railway.app/products"
@@ -32,6 +33,7 @@ const Addproducts = () => {
                     setImage('')
                     setDescription('')
                     setBrandedImage('')
+                    setBPrice('')
             }, 2000);
         }) 
 
@@ -49,17 +51,6 @@ const Addproducts = () => {
                             className="input" 
                             type="text" name="productName" 
                             placeholder="Product Name" 
-                            required 
-                        />
-                    </div>
-                    <div className="my-4">
-                        <input 
-                            onChange={(e) => setPrice(e.target.value)}
-                            value={price}
-                            className="input" 
-                            type="number" 
-                            name="price" 
-                            placeholder="Price" 
                             required 
                         />
                     </div>
@@ -82,11 +73,33 @@ const Addproducts = () => {
                     </div>
                     <div className="my-4">
                         <input 
+                            onChange={(e) => setPrice(e.target.value)}
+                            value={Plain_price}
+                            className="input" 
+                            type="number" 
+                            name="price" 
+                            placeholder="Plain price" 
+                            required 
+                        />
+                    </div>
+                    <div className="my-4">
+                        <input 
                             onChange={(e) => setBrandedImage(e.target.value)}
                             value={brandedimage}
                             className="input" 
                             name="image" 
                             placeholder="Branded image url"
+                            required 
+                        />
+                    </div>
+                    <div className="my-4">
+                        <input 
+                            onChange={(e) => setBPrice(e.target.value)}
+                            value={Branded_price}
+                            className="input" 
+                            type="number" 
+                            name="price" 
+                            placeholder="Branded price" 
                             required 
                         />
                     </div>

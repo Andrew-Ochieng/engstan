@@ -39,10 +39,10 @@ const Products = () => {
                 All Products
             </button>  */}
             <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
-            Clothings
+            Clothing and branding
             </button> 
             <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
-            Merchandised Products
+            Other branding services
             </button>
           </div>
         </div>

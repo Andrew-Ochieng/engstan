@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link }  from "react-router-dom";
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
     const  year = new Date()
     const newYear = year.getFullYear()
 
     const footerLink = [
-        {name: "Home", ref: "/"},
+        {name: "Home", ref: "/" },
         {name: "About", ref: "/about"},
-        {name: "Products", ref: "/products"},
+        {name: "Products and Services", ref: "/products"},
         {name: "Contact", ref: "/contact"},
     ]
 
@@ -30,16 +31,25 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-
-                    <div className="flex items-center justify-center">
-                        <div className="flex justify-center">
-                            Terms &#38; policy
-                        </div>
-                    </div>
-
-                    
                 </div>
-                
+                <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                          <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                            <a href="https://www.facebook.com/100053209607083" className="text-blue-500 hover:text-white">
+                                <p>EngStan Solutions</p>
+                              <FaFacebook size={32} />
+                            </a>
+                            <a href="https://twitter.com/" className="ml-4 text-blue-500 hover:text-white">
+                            <p>engstan_solutions</p>
+                              <FaTwitter size={32} />
+                            </a>
+                            <a href="https://www.instagram.com/engstan_solutions/" className="ml-4 text-purple-500 hover:text-white">
+                            <p>@engstan_solutions</p>
+                              <FaInstagram size={32} />
+                            </a>
+                           </span>
+                           <div className="flex items-center justify-center">
+                    </div>
+                    </div>
             </footer>
 
             <div className="bg-[#C70B38] text-white md:py-8 py-4 md:px-32 px-8 flex justify-center items-center text-sm">
