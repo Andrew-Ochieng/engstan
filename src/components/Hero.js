@@ -9,7 +9,7 @@ const Hero = () => {
                     <h1 className='font-black md:text-7xl sm:text-5xl text-4xl text-white md:mt-8 capitalize tracking-wide '>We make <br/> it happen</h1>
                     <p className='font-light md:text-3xl text-white'>Providing quality products at affordable price</p>
                     <div className='flex space-x-8 mt-8'>
-                        <Link to='/products' className='btn bg-white text-gray-900 font-medium'>
+                        <Link to='/' className='btn bg-white text-gray-900 font-medium'>
                             Get Started
                         </Link>
                         <Link to='/contact' className='btn font-medium'>
