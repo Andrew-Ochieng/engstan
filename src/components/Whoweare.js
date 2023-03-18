@@ -1,11 +1,11 @@
-import promotional  from '../assets/promotional.png'
+import kinoti  from '../assets/kinoti.png'
 
 const Whoweare = () => {
     return ( 
         <>
             <div className=" md:px-32 px-6 md:py-16 py-8 grid md:grid-cols-2">
                 <div className="md:mt-0 mt-4">
-                    <img src={promotional} alt='promotional'/>
+                    <img src={kinoti} alt='promotional'/>
                 </div>
                 <div>
                     <h1 className="content-title">Who We Are</h1>
