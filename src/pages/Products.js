@@ -35,9 +35,9 @@ const Products = () => {
       <div className="md:mx-32 mx-6 my-8">
         <div className="bg-[#C70B38] rounded-lg py-2 md:px-12 px-2">
           <div className="flex justify-between items-center space-x-2">
-            <button onClick={() => setSelectedButton('all')} className="category-btn">
+            {/* <button onClick={() => setSelectedButton('all')} className="category-btn">
                 All Products
-            </button> 
+            </button>  */}
             <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
             Clothings
             </button> 
