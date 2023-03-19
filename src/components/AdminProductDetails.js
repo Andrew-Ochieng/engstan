@@ -19,7 +19,7 @@ const AdminProductDetails = () => {
                     </div>
                     <div className="p-6">
                         <h2 className="text-4xl my-6">{ product.productName }</h2>
-                        <p className="text-xl my-6">Price: ${ product.price }</p>
+                        <p className="text-xl my-6">Price: Ksh { product.Plain_price }</p>
                         <div className="md:mb-10 mb-6">
                             <h3 className="text-gray-800 font-semibold md:text-2xl">Colors:</h3>
                             <div className="grid grid-cols-4 mt-2">

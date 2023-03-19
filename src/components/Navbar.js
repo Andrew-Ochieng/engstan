@@ -14,12 +14,12 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="md:px-32 px-6 py-6 top-0 left-0 static z-[100] bg-white shadow-xl"> 
+            <nav className="md:px-24 px-6 py-6 top-0 left-0 static z-[100] bg-white shadow-xl"> 
                 <div className="md:flex justify-between items-center">
                     <div className="flex justify-between items-center">
-                        <Link to='/' className="flex items-center justify-center uppercase font-semibold text-[#C70B38] md:text-2xl text-lg">
+                        <Link to='/' className="flex items-center justify-center uppercase font-semibold text-[#C70B38] md:text-l text-lg">
                             <img src={logo} alt="logo" className="w-6 mr-2"/>
-                            Engstan Solutions
+                            <p>Engstan Solutions</p> 
                         </Link>
                         <button onClick={() => setOpen((prev) => !prev)} className=' sm:hidden text-2xl text-gray-900'>
                             <FaBars />
@@ -29,7 +29,7 @@ const Navbar = () => {
                     <div className='md:flex hidden text-gray-700'>
                         <ul className="md:flex items-center md:text-lg font-medium">
                             {navLinks.map((nav) => (
-                                <li className="navlink md:mx-4 mx-2 md:my-0 my-2">
+                                <li key={nav.route} className="navlink md:mx-4 mx-2 md:my-0 my-2">
                                     <Link to={nav.route}>
                                         {nav.name}
                                     </Link>

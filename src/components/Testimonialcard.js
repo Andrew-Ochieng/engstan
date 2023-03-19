@@ -1,7 +1,7 @@
 const Testimonialcard = () => {
     const testimonials = [
         {name: "Martin Jonnes", post: "CEO, Magenta", content: "Respect customer and co-worker privacy, take pride in every, be fair, honest and knowledgeable while building trust."},
-        {name: "Martin Jonnes", post: "CEO, Magenta", content: "Respect customer and co-worker privacy, take pride in every, be fair, honest and knowledgeable while building trust."},
+        {name: "Stanley Kinoti", post: "CEO, Engstan", content: "Respect customer and co-worker privacy, take pride in every, be fair, honest and knowledgeable while building trust."},
         {name: "Martin Jonnes", post: "CEO, Magenta", content: "Respect customer and co-worker privacy, take pride in every, be fair, honest and knowledgeable while building trust."}
     ]
     return (

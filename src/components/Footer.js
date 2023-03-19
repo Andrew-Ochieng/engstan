@@ -23,7 +23,7 @@ const Footer = () => {
                     <div className="md:my-0 my-2">
                         <ul className="flex justify-center items-center md:text-base text-sm ">
                             {footerLink.map((link) => (
-                                <li className="navlink md:mx-4 mx-2 text-white font-light">
+                                <li key={link.name} className="navlink md:mx-4 mx-2 text-white font-light">
                                     <Link to={link.ref}>
                                         {link.name}
                                     </Link>

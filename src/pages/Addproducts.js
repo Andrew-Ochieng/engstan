@@ -55,7 +55,7 @@ const Addproducts = () => {
                         />
                     </div>
                     <div className="my-4">
-                        <select className="px-3 py-2 input" required value={product_type}
+                        <select className="px-3 py-2 input" required name={product_type}
                             onChange={(e) => setType(e.target.value)} >
                             <option value="Clothings">Clothings</option>
                             <option value="mechanized">Mechanized</option>
