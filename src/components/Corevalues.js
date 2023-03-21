@@ -1,6 +1,6 @@
 const Corevalues = () => {
     const values = [
-        {title: "Teamwork", content: "Cooperate and work together for the common good of the people we serve and the organisation’s mission"},
+        {title: "Timelines", content: "We deliver the services strictly within the set timelines agreed"},
         {title: "Integrity", content: "Respect customer and co-worker privacy, take pride in every transaction, be fair, honest and knowledgeable while building trust in each and every situation."}
     ]
     return (

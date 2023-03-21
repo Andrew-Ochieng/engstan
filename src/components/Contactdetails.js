@@ -4,9 +4,9 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Contactdetails = () => {
     const contactInfo = [
-        {icon: <FaPhone />, details: '+254 731 873750'},
-        {icon: <HiOutlineMail />, details: 'info@engstantechnologies.com'},
-        {icon: <MdLocationOn />, details: 'Engstan building, Thika Road - Nairobi'},
+        {icon: <FaPhone />, details: '+2547 6918 8331'},
+        {icon: <HiOutlineMail />, details: 'info.engstan@gmail.com'},
+        {icon: <MdLocationOn />, details: 'Glorious Hotel building, Matunguu - Meru'},
     ]
 
     return(

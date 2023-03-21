@@ -11,25 +11,37 @@ const ProductDetails = () => {
             <div className='md:mx-32 mx-8 md:mt-16 mt-8 md:mb-32 mb-16'>
                 <h1 className="md:text-3xl text-xl font-semibold md:mb-8 mb-4 text-gray-900">Product {id}</h1>
                 { isLoading && <h4 className="text-pink-500 font-semibold md:text-2xl text-xl">Loading data..</h4>}
-                { error && <h4 className="text-red-500">{ error }</h4>}
+                { error && <h4 className="text-[#C70B38]">{ error }</h4>}
 
                 <div className="grid md:grid-cols-2 grid-cols-1">
-                    <div className="p-6">
+                    <div className="">
                     <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Plain</h5>
-                    <p className="text-xl my-6 text-red-600">Price: Ksh{ product.Plain_price }</p>
+                    <p className="text-xl my-6 text-[#C70B38]">Price: Ksh{ product.Plain_price }</p>
                         <img className="img w-full rounded-lg" src={product.image_url} alt="product thumb"/>
                     </div>
-                    <div className="p-6">
+                    <div className="">
                     <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Branded</h5>
-                    <p className="text-xl my-6 text-red-600">Price: Ksh{ product.Branded_price }</p>
+                    <p className="text-xl my-6 text-[#C70B38]">Price: Ksh{ product.Branded_price }</p>
                         <img className="img w-full rounded-lg" src={product.brandedimage} alt="product thumb"/>
                     </div>
-                    <div className="p-6">
+                    <div className="">
                         <h2 className="text-4xl my-6">{ product.productName }</h2>
+                        <h3 class="text-gray-800 font-bold border-b-2 mb-4 pb-2 text-lg ">Product description:</h3>
+                        <p class="mb-6 font-light text-md ">{ product.description }</p>
+                        <h6 className="mt-6 mb-2 text-gray-800">
+                            <span className="md:text-xl font-medium text-[#084E7A] mr-1">Sizes available:</span> 
+                            S, M, L, XL, XXL, XXXL
+                        </h6>
+                        <p className="mb-6 text-gray-800 font-medium md:text-lg">
+                            Kids sizes also available
+                        </p>
+                        
                         <div className="md:mb-10 mb-6">
-                        <h6 className="text-xl my-6 text-green">Delivery Charges:</h6>
-                        <p className="text-gray-800 font-semibold md:text-2xl">Free delivery within Nairobi CBD and at subsidized charges countrywide</p>
-                            <p className="text-red-700 font-semibold md:text-2xl">All Colors Available</p>
+                            <h6 className="md:text-lg  text-[#C70B38] md:mb-6 mb-4">Delivery Charges: 
+                                <span className="text-base text-gray-800 font-light mx-1">Free delivery within Nairobi CBD and at subsidized charges countrywide</span>
+                            </h6>
+                        
+                            <p className="text-[#C70B38] font-semibold md:text-2xl">All Colors Available</p>
                             <div className="grid grid-cols-8 mt-2 gap-6">
                                 <p className="radio-btn bg-black"></p>
                                 <p className="radio-btn bg-red-500"></p>
@@ -40,11 +52,7 @@ const ProductDetails = () => {
                                 <p className="radio-btn bg-pink-500"></p>
                                 <p className="radio-btn bg-yellow-500"></p>    
                             </div>
-                            <h6 className="text-xl my-6 text-green">Sizes available: S,M,L,XL,XXL,XXXL</h6>
-                            <p className="text-gray-800 font-semibold md:text-2xl">Kids sizes also available</p>
                         </div>
-                        <h3 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Product description:</h3>
-                        <p class="mb-6 font-light text-md ">{ product.description }</p>
                         <button>
                             <a 
                                 className="btn flex items-center space-x-2"
@@ -54,7 +62,7 @@ const ProductDetails = () => {
                                 rel="noreferrer"
                                 >
                                 <HiShoppingCart className="text-xl" />
-                                <span >Customize Order</span>
+                                <span>Chat with Us</span>
                             </a>
                         </button>
                     </div>

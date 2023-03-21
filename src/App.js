@@ -14,7 +14,7 @@ import AdminProduct from './components/AdminProduct';
 function App() {
   const { data: products } = UseFetch('https://engstanapi-production.up.railway.app/products')
 
-  console.log(products)
+  // console.log(products)
   return (
     <div className="App">
       <BrowserRouter>
