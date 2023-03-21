@@ -9,7 +9,6 @@ const ProductDetails = () => {
     return ( 
         <>
             <div className='md:mx-32 mx-8 md:mt-16 mt-8 md:mb-32 mb-16'>
-                <h1 className="md:text-3xl text-xl font-semibold md:mb-8 mb-4 text-gray-900">Product {id}</h1>
                 { isLoading && <h4 className="text-pink-500 font-semibold md:text-2xl text-xl">Loading data..</h4>}
                 { error && <h4 className="text-[#C70B38]">{ error }</h4>}
 

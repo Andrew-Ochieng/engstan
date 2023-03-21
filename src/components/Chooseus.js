@@ -6,9 +6,9 @@ import { MdOutlineAcUnit } from "react-icons/md"
 
 const Chooseus = () => {
     const items = [
-        {icon: <MdOutlineAcUnit />, title: "Dedicated Customer Care", content: "24x7 onsite and offsite supports round the year"},
-        {icon: <BsAlarm />, title: "Reliable Branding", content: "We are a trusted people who delivers what is ordered;  true to site, true to ground"},
-        {icon: <BsBellFill />, title: "Competent Tech Solutions", content: "We are experts in graphics design, with up-to date branding machinery that will meet your expectation"}
+        {icon: <MdOutlineAcUnit />, title: "Dedicated Customer Care", content: "24x7 onsite and offsite supports round the year."},
+        {icon: <BsAlarm />, title: "Reliable Branding", content: "We are a trusted people who delivers what is ordered;  true to site, true to ground."},
+        {icon: <BsBellFill />, title: "Competent Tech Solutions", content: "We are experts in graphics design, with up-to date branding machinery that will meet your expectations."}
     ]
     return (
         <>
