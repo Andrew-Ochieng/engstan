@@ -17,9 +17,12 @@ const Navbar = () => {
             <nav className="md:px-24 px-6 py-6 top-0 left-0 static z-[100] bg-white shadow-xl"> 
                 <div className="md:flex justify-between items-center">
                     <div className="flex justify-between items-center">
-                        <Link to='/' className="flex items-center justify-center uppercase font-semibold text-[#C70B38] md:text-l text-lg">
+                        <Link to='/' className="flex items-center justify-center ">
                             <img src={logo} alt="logo" className="w-6 mr-2"/>
-                            <p>Engstan Solutions</p> 
+                            <div>
+                                <p className="uppercase font-semibold text-[#C70B38] md:text-2xl text-lg">Engstan Solutions</p> 
+                                <p className="italic text-xs text-gray-800">Summum Bonum</p>
+                            </div>
                         </Link>
                         <button onClick={() => setOpen((prev) => !prev)} className=' sm:hidden text-2xl text-gray-900'>
                             <FaBars />

@@ -28,9 +28,9 @@ const Contact = () => {
                 </div>
 
                 <div>
-                    <h1 className="title text-center text-gray-600 md:text-4xl md:mb-16 mb-8">Find Us on Google Maps</h1>
+                    <h1 className="title text-center text-gray-500 md:text-4xl md:mb-16 mb-8">Find Us on Google Maps</h1>
                     <div className=" justify-center w-full md:mb-32 mb-8 grayscale hover:grayscale-0" >
-                        <iframe title="engstan-solutions" width="100%" height="600" frameborder="0"  marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Engstan%Solutions,%Matunguu,%Meru,%20Kenya+(Engstan%20Solutions)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <iframe title="engstan-solutions" width="100%" height="600" frameborder="0"  marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=T-SHIRTS%PRINTING%IN%NAIROBI,%Thika%Rd,%Nairobi,%20Kenya+(Engstan%20Solutions)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                             <a href="https://www.gps.ie/car-satnav-gps/">sat navs</a>
                         </iframe>
                     </div>
