@@ -27,30 +27,11 @@ const ProductDetails = () => {
                         <h2 className="text-4xl my-6">{ product.productName }</h2>
                         <h3 class="text-gray-800 font-bold border-b-2 mb-4 pb-2 text-lg ">Product description:</h3>
                         <p class="mb-6 font-light text-md ">{ product.description }</p>
-                        <h6 className="mt-6 mb-2 text-gray-800">
-                            <span className="md:text-xl font-medium text-[#084E7A] mr-1">Sizes available:</span> 
-                            S, M, L, XL, XXL, XXXL
-                        </h6>
-                        <p className="mb-6 text-gray-800 font-medium md:text-lg">
-                            Kids sizes also available
-                        </p>
-                        
+
                         <div className="md:mb-10 mb-6">
                             <h6 className="md:text-lg  text-[#C70B38] md:mb-6 mb-4">Delivery Charges: 
                                 <span className="text-base text-gray-800 font-light mx-1">Free delivery within Nairobi CBD and at subsidized charges countrywide</span>
                             </h6>
-                        
-                            <p className="text-[#C70B38] font-semibold md:text-2xl">All Colors Available</p>
-                            <div className="grid grid-cols-8 mt-2 gap-6">
-                                <p className="radio-btn bg-black"></p>
-                                <p className="radio-btn bg-red-500"></p>
-                                <p className="radio-btn bg-blue-500"></p>
-                                <p className="radio-btn bg-yellow-500"></p> 
-                                <p className="radio-btn bg-green-500"></p>
-                                <p className="radio-btn bg-purple-500"></p>
-                                <p className="radio-btn bg-pink-500"></p>
-                                <p className="radio-btn bg-yellow-500"></p>    
-                            </div>
                         </div>
                         <button>
                             <a 
