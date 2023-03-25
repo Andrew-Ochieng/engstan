@@ -33,7 +33,17 @@ const Products = () => {
   return ( 
     <>
       <div className="md:mx-32 mx-6 my-8">
-      <h6 className="mt-6 mb-2 text-gray-800">
+        <div className="bg-[#C70B38] rounded-lg py-2 md:px-12 px-2">
+          <div className="flex justify-between items-center space-x-2"> 
+            <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
+            Clothing and branding
+            </button> 
+            <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
+            Other branding services
+            </button>
+          </div>
+        </div> 
+        <h6 className="mt-6 mb-2 text-gray-800">
                             <span className="md:text-xl font-medium text-[#084E7A] mr-1">Clothings Sizes available:</span> 
                             S, M, L, XL, XXL, XXXL
                         </h6>
@@ -50,17 +60,7 @@ const Products = () => {
                                 <p className="radio-btn bg-purple-500"></p>
                                 <p className="radio-btn bg-pink-500"></p>
                                 <p className="radio-btn bg-gray-500"></p>    
-                            </div>
-        <div className="bg-[#C70B38] rounded-lg py-2 md:px-12 px-2">
-          <div className="flex justify-between items-center space-x-2"> 
-            <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
-            Clothing and branding
-            </button> 
-            <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
-            Other branding services
-            </button>
-          </div>
-        </div>            
+                            </div>           
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 md:my-16 my-8">
             <ProductItems products={filteredProducts} />
         </div>
