@@ -48,13 +48,13 @@ const AdminProduct = () => {
           </div>
         </div>
         <h6 className="mt-6 mb-2 text-gray-800">
-                            <span className="md:text-xl font-medium text-[#084E7A] mr-1">Clothings Sizes available:</span> 
+                            <span className="md:text-xl font-small text-[#084E7A] mr-1">Clothings Sizes available:</span> 
                             S, M, L, XL, XXL, XXXL
                         </h6>
-                        <p className="mb-6 text-gray-800 font-medium md:text-lg">
+                        <p className="mb-6 text-gray-800 font-small md:text-lg">
                             Kids sizes also available
                         </p>
-                        <p className="text-[#C70B38] font-semibold md:text-2xl">All Colors Available</p>
+                        <p className="text-[#C70B38] font-semibold md:text-xl">All Colors Available</p>
                             <div className="grid grid-cols-8 mt-2 gap-6">
                                 <p className="radio-btn bg-black"></p>
                                 <p className="radio-btn bg-red-500"></p>
