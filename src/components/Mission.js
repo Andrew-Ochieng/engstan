@@ -1,7 +1,7 @@
 const Mission = () => {
     const missions = [
-        {title: "Our Mission", content: "To be a regional leading enterprise in quality T-Shirts supply and preferred partner in T- Shirts printing."},
-        {title: "Our Vision", content: "To offer high quality apparel products and services in a timely manner, that meets customer satisfaction through innovative and creative designs."}
+        {title: "Our Vision", content: "To be a regional leading enterprise in quality T-Shirts supply and preferred partner in T- Shirts printing."},
+        {title: "Our Mission", content: "To offer high quality apparel products and services in a timely manner, that meets customer satisfaction through innovative and creative designs."}
     ]
     return (
         <>
