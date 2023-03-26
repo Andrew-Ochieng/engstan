@@ -20,7 +20,7 @@ const Navbar = () => {
                         <Link to='/' className="flex items-center justify-center    ">
                             <img src={logo} alt="logo" className="md:w-10 w-8 mr-2"/>
                             <div>
-                                <p className="uppercase font-semibold text-[#C70B38] md:text-2xl text-lg">Engstan Solutions</p> 
+                                <p className="uppercase font-semibold text-[#C70B38] md:text-xl text-base">Engstan Solutions</p> 
                                 <p className="italic text-xs text-gray-800">Summum Bonum</p>
                             </div>
                         </Link>

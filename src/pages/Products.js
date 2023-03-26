@@ -43,24 +43,24 @@ const Products = () => {
             </button>
           </div>
         </div> 
-        <h6 className="mt-6 mb-2 text-gray-800">
-                            <span className="md:text-xl font-small text-[#084E7A] mr-1">Clothings Sizes available:</span> 
-                            S, M, L, XL, XXL, XXXL
-                        </h6>
-                        <p className="mb-6 text-gray-800 font-small md:text-lg">
-                            Kids sizes also available
-                        </p>
-                        <p className="text-[#C70B38] font-semibold md:text-2xl">All Colors Available</p>
-                            <div className="grid grid-cols-8 mt-2 gap-6">
-                                <p className="radio-btn bg-black"></p>
-                                <p className="radio-btn bg-red-500"></p>
-                                <p className="radio-btn bg-blue-500"></p>
-                                <p className="radio-btn bg-yellow-500"></p> 
-                                <p className="radio-btn bg-green-500"></p>
-                                <p className="radio-btn bg-purple-500"></p>
-                                <p className="radio-btn bg-pink-500"></p>
-                                <p className="radio-btn bg-gray-500"></p>    
-                            </div>           
+        <h6 className="mt-6 mb-2 text-gray-800 md:text-base text-sm">
+            <span className=" text-[#084E7A] mr-1">Clothings Sizes available:</span> 
+            S, M, L, XL, XXL, XXXL
+        </h6>
+        <p className="mb-6 text-gray-800 md:text-base text-sm">
+            Kids sizes also available
+        </p>
+        <p className="text-[#C70B38] font-semibold md:text-xl text-lg">All Colors Available</p>
+            <div className="grid grid-cols-8 mt-2 gap-6">
+                <p className="radio-btn bg-black"></p>
+                <p className="radio-btn bg-red-500"></p>
+                <p className="radio-btn bg-blue-500"></p>
+                <p className="radio-btn bg-yellow-500"></p> 
+                <p className="radio-btn bg-green-500"></p>
+                <p className="radio-btn bg-purple-500"></p>
+                <p className="radio-btn bg-pink-500"></p>
+                <p className="radio-btn bg-gray-500"></p>    
+            </div>           
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 md:my-16 my-8">
             <ProductItems products={filteredProducts} />
         </div>
