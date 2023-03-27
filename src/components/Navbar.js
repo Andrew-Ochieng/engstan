@@ -14,14 +14,14 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="md:px-24 px-6 py-4 top-0 left-0 static z-[100] bg-white shadow-xl"> 
+            <nav className="md:px-24 px-6 py-2 top-0 left-0 static z-[100] bg-white shadow-xl"> 
                 <div className="md:flex justify-between items-center">
                     <div className="flex justify-between items-center">
                         <Link to='/' className="flex items-center justify-center    ">
-                            <img src={logo} alt="logo" className="md:w-10 w-8 mr-2"/>
+                            <img src={logo} alt="logo" className="md:w-12 w-10 mr-2"/>
                             <div>
-                                <p className="uppercase font-semibold text-[#C70B38] md:text-xl text-base">Engstan Solutions</p> 
-                                <p className="italic text-xs text-gray-800">Summum Bonum</p>
+                                <p className="uppercase font-semibold text-[#C70B38] md:text-lg text-sm">Engstan Solutions</p> 
+                                <p className="italic text-xs text-gray-600">Summum Bonum</p>
                             </div>
                         </Link>
                         <button onClick={() => setOpen((prev) => !prev)} className=' sm:hidden text-2xl text-gray-900'>
