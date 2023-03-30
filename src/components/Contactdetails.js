@@ -24,7 +24,7 @@ const Contactdetails = () => {
                     <span className="md:text-2xl text-xl bg-gray-100 rounded-full md:p-6 p-4 text-[#084E7A]">
                         <HiOutlineMail />
                     </span>
-                    <p class="md:ml-4 ml-2 mt-2 md:text-lg text-sm font-light">info.engstansolutions.co.ke</p>
+                    <p class="md:ml-4 ml-2 mt-2 md:text-lg text-sm font-light">info@engstansolutions.co.ke</p>
                 </div>
                 {contactInfo.map((info) => (
                     <div 
