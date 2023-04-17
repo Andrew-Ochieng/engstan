@@ -18,14 +18,7 @@ import tshirt6 from  "../assets/images/tshirt6.jpg";
 import ab from "../assets/images/ab.jpg";
 import bc from "../assets/images/bc.jpg";
 import book from "../assets/images/book2.jpg";
-import water from "../assets/images/branded water.png";
-import branded from "../assets/images/Branded-Mugs-in-Nairobi.jpg";
-import cap2 from "../assets/images/cap2.jpg";
 import cd from "../assets/images/cd.jpg";
-import coo from "../assets/images/coo.png";
-import cooi from "../assets/images/coo1.png";
-import coopv from "../assets/images/coopv.png";
-import cop1 from "../assets/images/cop1.png";
 import ef from "../assets/images/ef.jpg";
 import fg from "../assets/images/fg.jpg";
 import gh from "../assets/images/gh.jpg";
@@ -38,14 +31,13 @@ import lm from "../assets/images/lm.jpg";
 import mn from "../assets/images/mn.jpg";
 import op from "../assets/images/op.jpg";
 import overall from "../assets/images/overall1.png";
-import pngtree from "../assets/images/pngtree.jpg";
 import polo from "../assets/images/polo.png";
 
 
 const GalleryPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const products = [bulk,cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,water,branded,cap2,cd,coo,cooi,coopv,cop1,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall,pngtree,polo];
+  const products = [bulk,cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,cd,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall,polo];
 
   const handleBackButtonClick = () => {
     setCurrentImageIndex(currentImageIndex === 0 ? products.length - 1 : currentImageIndex - 1);
