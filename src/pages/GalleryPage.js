@@ -36,7 +36,6 @@ import jk from "../assets/images/jk.jpg";
 import knha from "../assets/images/knha.jpg";
 import lm from "../assets/images/lm.jpg";
 import mn from "../assets/images/mn.jpg";
-import number from "../assets/images/number-9.jpg";
 import op from "../assets/images/op.jpg";
 import overall from "../assets/images/overall1.png";
 import pngtree from "../assets/images/pngtree.jpg";
@@ -46,7 +45,7 @@ import polo from "../assets/images/polo.png";
 const GalleryPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const products = [bulk,cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,water,branded,cap2,cd,coo,cooi,coopv,cop1,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,number,op,overall,pngtree,polo];
+  const products = [bulk,cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,water,branded,cap2,cd,coo,cooi,coopv,cop1,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall,pngtree,polo];
 
   const handleBackButtonClick = () => {
     setCurrentImageIndex(currentImageIndex === 0 ? products.length - 1 : currentImageIndex - 1);
