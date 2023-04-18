@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-import bulk from "../assets/images/bulk.jpg";
+// import bulk from "../assets/images/bulk.jpg";
 import cap from "../assets/images/cap.jpg";
 import hood from "../assets/images/hood.jpg";
 import hood2 from "../assets/images/hood2.jpg";
@@ -35,7 +35,7 @@ import overall from  "../assets/images/overall1.png";
 const GalleryPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const products = [bulk,cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,cd,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall];
+  const products = [cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,cd,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall];
 
   const handleBackButtonClick = () => {
     setCurrentImageIndex(currentImageIndex === 0 ? products.length - 1 : currentImageIndex - 1);
@@ -46,22 +46,24 @@ const GalleryPage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen md:my-8 mx-4">
       <div className="w-full max-w-4xl">
         <div className="relative">
-          <img
-            src={products[currentImageIndex]}
-            alt="Gallery"
-            className="w-full h-1/2 object-cover"
-          />
+          <div className='w-full'>
+            <img
+              src={products[currentImageIndex]}
+              alt="Gallery"
+              className="w-full h-1/2 object-cover rounded-lg"
+            />
+          </div>
           <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 text-white text-xl bg-gray-500 rounded-full p-2"
+            className="left-0 carousel-btn"
             onClick={handleBackButtonClick}
           >
             &larr;
           </button>
           <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 text-white text-xl bg-gray-500 rounded-full p-2"
+            className="right-0 carousel-btn"
             onClick={handleForwardButtonClick}
           >
             &rarr;
