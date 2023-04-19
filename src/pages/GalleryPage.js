@@ -1,5 +1,4 @@
 import React, { useState }  from 'react';
-// import bulk from "../assets/images/bulk.jpg";
 import cap from "../assets/images/cap.jpg";
 import hood from "../assets/images/hood.jpg";
 import hood2 from "../assets/images/hood2.jpg";
@@ -46,14 +45,14 @@ const GalleryPage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen md:my-8 mx-4">
-      <div className="w-full max-w-4xl">
+    <div className="flex justify-center items-center md:m-16 my-12 mx-6">
+      <div className="w-full ">
         <div className="relative">
-          <div className='w-full'>
+          <div className=' '>
             <img
               src={products[currentImageIndex]}
               alt="Gallery"
-              className="w-full h-1/2 object-cover rounded-lg"
+              className="w-full object-cover rounded-lg"
             />
           </div>
           <button
