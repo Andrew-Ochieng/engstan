@@ -30,6 +30,7 @@ import lm from "../assets/images/lm.jpg";
 import mn from "../assets/images/mn.jpg";
 import op from "../assets/images/op.jpg";
 import overall from  "../assets/images/overall1.png";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 const GalleryPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -45,27 +46,27 @@ const GalleryPage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center md:m-16 my-12 mx-6">
-      <div className="w-full ">
+    <div className="flex justify-center items-center mx-6 md:my-12 my-8">
+      <div className="flex justify-center items-center w-full ">
         <div className="relative">
-          <div className=' '>
+          <div className='md:mx-48 mx-4 '>
             <img
               src={products[currentImageIndex]}
               alt="Gallery"
-              className="w-full object-cover rounded-lg"
+              className="w-full md:h-96 h-80 object-cover bg-cover rounded-lg"
             />
           </div>
           <button
             className="left-0 carousel-btn"
             onClick={handleBackButtonClick}
           >
-            &larr;
+            <FaChevronLeft />
           </button>
           <button
             className="right-0 carousel-btn"
             onClick={handleForwardButtonClick}
           >
-            &rarr;
+            <FaChevronRight />
           </button>
         </div>
       </div>

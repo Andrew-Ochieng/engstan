@@ -40,7 +40,7 @@
   }
 
   .carousel-btn {
-    @apply absolute top-1/2 transform -translate-y-1/2 text-white text-xl bg-[#084e7a] rounded-full px-3 py-2 md:mx-8 mx-2
+    @apply absolute top-1/2 transform -translate-y-1/2 text-white bg-[#084e7a] rounded-full md:p-3 p-2 md:mx-8 -mx-4 md:text-base text-xs
   }
 
 
