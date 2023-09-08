@@ -39,5 +39,9 @@
     @apply md:text-2xl text-sm font-bold rounded-lg py-2 text-white hover:text-[#084e7a] 
   }
 
+  .carousel-btn {
+    @apply absolute top-1/2 transform -translate-y-1/2 text-white bg-[#084e7a] rounded-full md:p-3 p-2 md:mx-8 -mx-4 md:text-base text-xs
+  }
+
 
 }

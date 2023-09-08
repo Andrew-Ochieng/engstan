@@ -6,9 +6,10 @@ const Footer = () => {
     const newYear = year.getFullYear()
 
     const footerLink = [
-        {name: "Home", ref: "/" },
+        {name: "Home", to: "/" },
         {name: "About", ref: "/about"},
         {name: "Products & Services", ref: "/products"},
+        {name: "Gallery", ref: "/gallery"},
         {name: "Contact", ref: "/contact"},
     ]
 
@@ -59,7 +60,7 @@ const Footer = () => {
 
             <div className="bg-[#C70B38] text-white md:py-8 py-4 md:px-32 px-8 flex justify-center items-center text-sm">
                 <p>Copyright &copy; <span className="font-medium">{newYear}</span> | 
-                    <Link href='/' className="ml-1 text-gray-800"> 
+                    <Link to='/' className="ml-1 text-gray-800"> 
                         Engstan Solutions
                     </Link>
                 </p>
