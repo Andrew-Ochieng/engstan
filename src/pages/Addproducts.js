@@ -15,7 +15,7 @@ const Addproducts = () => {
         const products = {productName, Plain_price, Branded_price, product_type, image_url, brandedimage, description}
         console.log(products)
 
-        const api = "https://engstanapi-production.up.railway.app/products"
+        const api = "http://localhost:3000/products"
         fetch(api, {
             method: "POST",
             headers: {"Content-Type":"application/json"},

@@ -1,5 +1,5 @@
 
-import ProductItems from "../components/ProductItems";
+import ProductItems from "../components/Products/ProductItems";
 import React, { useState, useEffect } from 'react';
 
 
@@ -12,7 +12,7 @@ const Products = () => {
 
 
   useEffect(() => {
-    fetch('https://engstanapi-production.up.railway.app/products')
+    fetch('http://localhost:3000/products')
     .then((res)=>res.json())
     .then((productsData)=>{
       setProducts(productsData);

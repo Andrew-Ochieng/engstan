@@ -18,7 +18,7 @@ const Login = () => {
           }
         const data = { username: username, password: password };
         console.log(data)
-        fetch("https://engstanapi-production.up.railway.app/login", {
+        fetch("http://localhost:3000/login", {
           method: "POST",
           headers: { "Content-Type": "application/json"},
           body: JSON.stringify(data),

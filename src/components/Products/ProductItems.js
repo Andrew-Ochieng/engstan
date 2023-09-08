@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const products = ({products}) => {
     return ( 
         <>
-            {products.map((product) => (
-                <div key={product.id} className="my-4 mx-2 p-1 rounded-lg bg-[#084E7A] shadow-lg hover:shadow-xl">
+            {products.map((product, index) => (
+                <div key={index} className="my-4 mx-2 p-1 rounded-lg bg-[#084E7A] shadow-lg hover:shadow-xl">
                   <div>
                     <img src={product.image_url} alt="" className='thumb p-2 bg-white rounded-lg '/>
                   </div>

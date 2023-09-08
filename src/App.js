@@ -8,11 +8,11 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import UseFetch from './components/UseFetch';
 import Login from './pages/Login';
-import ProductDetails from './components/ProductDetails';
+import ProductDetails from './components/Products/ProductDetails';
 import Addproducts from './pages/Addproducts';
 import AdminProduct from './components/AdminProduct';
 function App() {
-  const { data: products } = UseFetch('https://engstanapi-production.up.railway.app/products')
+  const { data: products } = UseFetch('http://localhost:3000/products')
 
   // console.log(products)
   return (
@@ -20,9 +20,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/home' element={ <Home /> }/>
+          <Route path='/' element={ <Home /> }/>
           <Route path='/about' element={ <About /> }/>
-          <Route path='/' element={ <Products products={products} /> }/>
+          <Route path='/products' element={ <Products products={products} /> }/>
           <Route path='/:id' element={ <ProductDetails products={products} /> }/>
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/admin' element={ <Login /> }/>

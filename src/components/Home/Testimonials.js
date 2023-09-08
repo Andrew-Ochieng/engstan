@@ -1,4 +1,4 @@
-import Testimonialcard from "./Testimonialcard";
+import Testimonialcard from "../Home/Testimonialcard";
 
 const Testimonials = () => {
     return ( 

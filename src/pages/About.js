@@ -1,7 +1,7 @@
-import Chooseus from "../components/Chooseus";
-import Corevalues from "../components/Corevalues";
-import Mission from "../components/Mission";
-import Whoweare from "../components/Whoweare";
+import Chooseus from "../components/About/Chooseus";
+import Corevalues from "../components/About/Corevalues";
+import Mission from "../components/About/Mission";
+import Whoweare from "../components/About/Whoweare";
 
 const About = () => {
     return ( 

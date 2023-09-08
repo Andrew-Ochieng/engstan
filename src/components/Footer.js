@@ -1,5 +1,5 @@
 import { Link }  from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
     const  year = new Date()
@@ -14,6 +14,16 @@ const Footer = () => {
 
     return ( 
         <>
+            <div>
+            <a
+                href="https://wa.me/254769188331"
+                class="whatsapp_float p-3 animate-bounce"
+                target="_blank"
+                rel="noopener noreferrer"
+            >   
+                <FaWhatsapp />
+            </a>
+            </div>
             <footer className="bg-[#C70B38] opacity-90 md:py-24 py-12 md:px-32 px-8 text-white">
                 <div className="md:flex md:justify-between justify-center items-center text-center mb-8 md:text-base text-sm">
                     <div>

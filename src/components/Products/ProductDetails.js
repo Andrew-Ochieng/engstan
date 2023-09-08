@@ -1,10 +1,10 @@
 import { HiShoppingCart } from "react-icons/hi";
 import { useParams } from "react-router-dom";
-import UseFetch from "./UseFetch";
+import UseFetch from "../UseFetch";
 
 const ProductDetails = () => {
     const { id } = useParams()
-    const { data: product, error, isLoading} = UseFetch('https://engstanapi-production.up.railway.app/products/' + id)
+    const { data: product, error, isLoading} = UseFetch('http://localhost:3000/products/' + id)
 
     return ( 
         <>
