@@ -21,10 +21,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={ <Home /> }/>
+          <Route path='/' element={ <Home products={products} /> }/>
           <Route path='/about' element={ <About /> }/>
           <Route path='/products' element={ <Products products={products} /> }/>
-          <Route path='/:id' element={ <ProductDetails products={products} /> }/>
+          <Route path='/products/:id' element={ <ProductDetails products={products} /> }/>
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/admin' element={ <Login /> }/>
           <Route path='/contact' element={ <Contact /> }/>

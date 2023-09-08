@@ -1,24 +1,11 @@
 
-import ProductItems from "../components/Products/ProductItems";
+import ProductList from "../components/Products/ProductList";
 import React, { useState, useEffect } from 'react';
 
 
-const Products = () => {
-
-
+const Products = ({products}) => {
   const [selectedButton, setSelectedButton] = useState('all');
-  const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-
-
-  useEffect(() => {
-    fetch('http://localhost:3000/products')
-    .then((res)=>res.json())
-    .then((productsData)=>{
-      setProducts(productsData);
-      setFilteredProducts(productsData)
-    })
-  }, []);
 
   useEffect(() => {
     if (selectedButton === 'Clothings') {
@@ -33,16 +20,21 @@ const Products = () => {
   return ( 
     <>
       <div className="md:mx-32 mx-6 my-8">
-        <div className="bg-[#C70B38] rounded-lg py-2 md:px-12 px-2">
-          <div className="flex justify-between items-center space-x-2"> 
-            <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
-            Clothing and branding
-            </button> 
-            <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
-            Other branding services
-            </button>
-          </div>
-        </div> 
+        <div className="grid md:grid-cols-2 xl:gap-16 md:gap-8 gap-4">
+          <div>
+              <input className="input" placeholder="Search products..." type='search'/>
+            </div>
+          <div className="bg-[#C70B38] rounded-lg py-2  px-2">
+            <div className="flex justify-between items-center space-x-2 text-sm"> 
+              <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
+                Clothing and branding
+              </button> 
+              <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
+                Other services
+              </button>
+            </div>
+          </div> 
+        </div>
         <h6 className="mt-6 mb-2 text-gray-800 md:text-base text-sm">
             <span className=" text-[#084E7A] mr-1">Clothings Sizes available:</span> 
             S, M, L, XL, XXL, XXXL
@@ -62,7 +54,7 @@ const Products = () => {
                 <p className="radio-btn bg-gray-500"></p>    
             </div>           
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 md:my-16 my-8">
-            <ProductItems products={filteredProducts} />
+            <ProductList products={filteredProducts} />
         </div>
     </div>
     </>

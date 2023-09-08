@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const products = ({products}) => {
+const ProductList = ({products}) => {
     return ( 
         <>
             {products.map((product, index) => (
@@ -15,7 +15,7 @@ const products = ({products}) => {
                     </div>
                     <button className="mt-4">
                       <Link 
-                      to={`/${product.id}`} 
+                      to={`/products/${product.id}`} 
                       className='btn'
                       >
                         More Details 
@@ -29,4 +29,4 @@ const products = ({products}) => {
      );
 }
  
-export default products;
+export default ProductList;

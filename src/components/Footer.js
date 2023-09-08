@@ -15,10 +15,10 @@ const Footer = () => {
 
     return ( 
         <>
-            <div>
+            <div className="flex items-center justify-center">
             <a
                 href="https://wa.me/254769188331"
-                class="whatsapp_float p-3 animate-bounce"
+                className="whatsapp_float md:p-3 p-2 rounded-full text-white bg-green-500 md:bottom-8 bottom-4 md:right-8 right-4 animate-bounce"
                 target="_blank"
                 rel="noopener noreferrer"
             >   

@@ -9,11 +9,8 @@ const Hero = () => {
                     <h1 className='font-black md:text-7xl sm:text-5xl text-4xl text-white md:mt-8 capitalize tracking-wide '>We make <br/> it happen</h1>
                     <p className='font-light md:text-3xl text-white'>Providing quality products at affordable price</p>
                     <div className='flex mt-8'>
-                        <Link to='/' className='btn md:mr-4 mr-1 bg-white text-gray-900 font-medium'>
-                            Get Started
-                        </Link>
-                        <Link to='/contact' className='btn md:ml-4 ml-1 font-medium'>
-                            Contact Us
+                        <Link to='/products' className='btn font-medium hover:bg-white hover:text-red-500'>
+                            Shop Now
                         </Link>
                     </div>
                 </div>

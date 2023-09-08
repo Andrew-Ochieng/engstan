@@ -47,7 +47,7 @@ const Navbar = () => {
                 </div>
 
                 {/* mobile-version */}
-                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0  space-y-8 py-6 px-8 w-full h-screen duration-300 ease-in-out bg-white`}>
+                <div className={`${open ? "left-0 " : "left-[-100%]"} sm:hidden absolute top-0 right-0 bottom-0  space-y-8 py-6 px-8 w-[85%] min-h-screen duration-300 ease-in-out bg-white opacity-95`}>
                     <div className="flex justify-end">
                         <button onClick={() => setOpen((prev) => !prev)} className="sm:hidden text-2xl text-gray-900 text-right">
                             <FaTimes />
