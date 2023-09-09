@@ -11,9 +11,9 @@ const Home = ({products}) => {
           <Hero />
           <div className="md:px-32 px-6 md:py-16 py-8">
             <h2 className="content-title text-center">Our Products</h2>
-            <div className="grid md:grid-cols-4 sm:grid-cols-2 ">
+            {/* <div className="grid md:grid-cols-4 sm:grid-cols-2 md:gap-10 gap-8"> */}
               <ProductList products={products.slice(0,8)}/>
-            </div> 
+            {/* </div>  */}
             <div className="flex items-center justify-center md:mt-16 mt-8">
               <Link to='/products' className="btn ">View All Products</Link>
             </div>

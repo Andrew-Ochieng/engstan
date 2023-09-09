@@ -6,11 +6,11 @@
 /* custom css */
 @layer components {
   .btn {
-    @apply text-white bg-[#C70B38] px-3 py-2 duration-300 rounded-md 
+    @apply text-white bg-[#C70B38] px-4 py-2 duration-300 rounded-full 
   }
 
   .input {
-    @apply px-3 py-2 bg-gray-100 focus:bg-white rounded-lg w-full border-2 border-[#084E7A] outline-none focus-within:border-[#084e7a] focus-within:shadow-md 
+    @apply px-3 py-2 text-gray-500 bg-gray-100 focus:bg-white rounded-full w-full border-2 border-[#084E7A] outline-none focus-within:border-[#084e7a] focus-within:shadow-md 
   }
 
   .navlink {

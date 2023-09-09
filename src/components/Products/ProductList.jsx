@@ -3,28 +3,31 @@ import { Link } from "react-router-dom";
 const ProductList = ({products}) => {
     return ( 
         <>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 md:gap-10 gap-8 md:my-16 my-8">
             {products.map((product, index) => (
-                <div key={index} className="my-4 mx-2 p-1 rounded-lg bg-[#084E7A] shadow-lg hover:shadow-xl">
-                  <div>
-                    <img src={product.image_url} alt="" className='thumb p-2 bg-white rounded-lg '/>
+                <div key={index} className="rounded-2xl shadow-lg hover:shadow-xl">
+                  <div className="p-3 border-2 border-[#084E7A] rounded-t-2xl">
+                    <Link to={`/products/${product.id}`}>
+                      <img 
+                        src={product.image_url} 
+                        alt="" 
+                        className='thumb p-2 rounded-2xl hover:scale-105 duration-700'
+                        />
+                    </Link>
                   </div>
-                  <div className="py-4 px-3 mt-2">
-                    <div>
-                      <h2 className="text-gray-300 text-sm font-light">Price: Ksh { product.Plain_price }</h2>
-                      <h3 className="font-medium text-white truncate">{product.productName}</h3>
+                  <div className="px-4 py-3 bg-[#084E7A] rounded-b-2xl">
+                    <h3 className="font-medium text-white ">{product.productName}</h3>
+                    <div className="flex items-center justify-between">
+                      <p className="font-semibold text-gray-200">Ksh { product.price }</p>
+                      <button className="btn text-sm mt-4">
+                        Add to Cart
+                      </button>
                     </div>
-                    <button className="mt-4">
-                      <Link 
-                      to={`/products/${product.id}`} 
-                      className='btn'
-                      >
-                        More Details 
-                      </Link>
-                    </button>
                   </div>
                   
                 </div>
             ))}
+          </div>
         </>
      );
 }

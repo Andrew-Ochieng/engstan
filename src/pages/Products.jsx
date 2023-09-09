@@ -24,26 +24,22 @@ const Products = ({products}) => {
           <div>
               <input className="input" placeholder="Search products..." type='search'/>
             </div>
-          <div className="bg-[#C70B38] rounded-lg py-2  px-2">
-            <div className="flex justify-between items-center space-x-2 text-sm"> 
-              <button onClick={() => setSelectedButton('Clothings')} className="category-btn">
+          <div className="py-2  px-2">
+            <div className="md:flex justify-end items-center gap-6 text-sm "> 
+              <button onClick={() => setSelectedButton('Clothings')} className="py-3 btn uppercase">
                 Clothing and branding
               </button> 
-              <button onClick={() => setSelectedButton('mechanized')}  className="category-btn">
+              <button onClick={() => setSelectedButton('mechanized')}  className="md:mt-0 mt-3 py-3 btn uppercase">
                 Other services
               </button>
             </div>
           </div> 
         </div>
-        <h6 className="mt-6 mb-2 text-gray-800 md:text-base text-sm">
-            <span className=" text-[#084E7A] mr-1">Clothings Sizes available:</span> 
-            S, M, L, XL, XXL, XXXL
-        </h6>
-        <p className="mb-6 text-gray-800 md:text-base text-sm">
-            Kids sizes also available
-        </p>
-        <p className="text-[#C70B38] font-semibold md:text-xl text-lg">All Colors Available</p>
-            <div className="grid grid-cols-8 mt-2 gap-6">
+
+        <div className="md:flex items-center justify-between md:mt-0 mt-4">
+          <div>
+            <p className="text-[#C70B38] font-semibold md:text-xl text-lg">All Colors Available</p>
+            <div className="flex  mt-2 md:gap-6 gap-2">
                 <p className="radio-btn bg-black"></p>
                 <p className="radio-btn bg-red-500"></p>
                 <p className="radio-btn bg-blue-500"></p>
@@ -52,10 +48,21 @@ const Products = ({products}) => {
                 <p className="radio-btn bg-purple-500"></p>
                 <p className="radio-btn bg-pink-500"></p>
                 <p className="radio-btn bg-gray-500"></p>    
-            </div>           
-        <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 md:my-16 my-8">
-            <ProductList products={filteredProducts} />
-        </div>
+            </div>   
+          </div> 
+          <div>
+            <h6 className="mt-6 mb-2 text-gray-800 md:text-base text-sm">
+                <span className=" text-[#084E7A] mr-1">Clothings Sizes available:</span> 
+                S, M, L, XL, XXL, XXXL
+            </h6>
+            <p className="mb-6 text-gray-800 md:text-base text-sm">
+                Kids sizes also available
+            </p>
+          </div>
+        </div>        
+          
+        <ProductList products={filteredProducts} />
+        
     </div>
     </>
    );
