@@ -32,7 +32,7 @@ import op from "../assets/images/op.jpg";
 import overall from  "../assets/images/overall1.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
-const GalleryPage = () => {
+const Gallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const products = [cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,cd,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall];
@@ -74,4 +74,4 @@ const GalleryPage = () => {
   );
 };
 
-export default GalleryPage;
+export default Gallery;

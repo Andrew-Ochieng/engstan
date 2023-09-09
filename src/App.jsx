@@ -7,11 +7,11 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import UseFetch from './components/UseFetch';
-import Login from './pages/Login';
+import Login from './pages/Admin/Login';
 import ProductDetails from './components/Products/ProductDetails';
-import Addproducts from './pages/Addproducts';
-import AdminProduct from './components/AdminProduct';
-import GalleryPage from './pages/GalleryPage';
+import Addproducts from './pages/Admin/Addproducts';
+import AdminProduct from './components/Admin/AdminProduct';
+import Gallery from './pages/Gallery';
 function App() {
   const { data: products } = UseFetch('http://localhost:3000/products')
 
@@ -28,7 +28,7 @@ function App() {
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/admin' element={ <Login /> }/>
           <Route path='/contact' element={ <Contact /> }/>
-          <Route path='/gallery' element={ <GalleryPage /> }/>
+          <Route path='/gallery' element={ <Gallery /> }/>
           <Route path='/addproducts' element={ <Addproducts /> }/>
           <Route path='/adminproducts' element={ <AdminProduct products={products} /> }/>
         </Routes>

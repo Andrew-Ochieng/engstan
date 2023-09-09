@@ -9,7 +9,7 @@ const Home = ({products}) => {
     <>
       <div className=''>
           <Hero />
-          <div className="md:px-32 px-8 md:py-16 py-8">
+          <div className="md:px-32 px-6 md:py-16 py-8">
             <h2 className="content-title text-center">Our Products</h2>
             <div className="grid md:grid-cols-4 sm:grid-cols-2 ">
               <ProductList products={products.slice(0,8)}/>

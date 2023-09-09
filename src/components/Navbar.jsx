@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="md:px-24 px-6 py-2 top-0 left-0 static z-[100] bg-white shadow-xl"> 
+            <nav className="md:px-24 px-4 py-2 top-0 left-0 static z-[100] bg-white shadow-xl"> 
                 <div className="md:flex justify-between items-center">
                     <div className="flex justify-between items-center">
                         <Link to='/' className="flex items-center justify-center    ">
@@ -53,7 +53,7 @@ const Navbar = () => {
                             <FaTimes />
                         </button> 
                     </div>
-                    <ul className="flex flex-col items-center text-base font-medium space-y-8">
+                    <ul className="flex flex-col text-base font-medium space-y-8">
                         {navLinks.map((nav) => (
                             <li key={nav.id} onClick={() => setOpen((prev) => !prev)} className="navlink md:mx-4 mx-2 md:my-0 my-2">
                                 <Link to={nav.route}>
@@ -61,7 +61,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         ))}
-                        <button onClick={() => setOpen((prev) => !prev)} className="btn md:mx-4 mx-2 md:my-0 my-2">
+                        <button onClick={() => setOpen((prev) => !prev)} className="btn md:mx-4 mx-2 md:my-0 my-2 ">
                             <Link to='/contact'>
                                 Contact
                             </Link>
