@@ -9,9 +9,9 @@ const ProductList = ({products}) => {
                   <div className="p-3 border-2 border-[#084E7A] rounded-t-2xl">
                     <Link to={`/products/${product.id}`}>
                       <img 
-                        src={product.image_url} 
+                        src={product.plain_image_url} 
                         alt="" 
-                        className='thumb p-2 rounded-2xl hover:scale-105 duration-700'
+                        className='thumb p-2 rounded-2xl hover:scale-110 duration-500'
                         />
                     </Link>
                   </div>

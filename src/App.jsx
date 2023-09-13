@@ -12,10 +12,22 @@ import ProductDetails from './components/Products/ProductDetails';
 import Addproducts from './pages/Admin/Addproducts';
 import AdminProduct from './components/Admin/AdminProduct';
 import Gallery from './pages/Gallery';
+import { useEffect, useState } from 'react';
+import { supabase } from './config/supabaseConfig';
 function App() {
-  const { data: products } = UseFetch('http://localhost:3000/products')
+  // const { data: products } = UseFetch('http://localhost:3000/products')
+  const [products, setProducts] = useState([])
 
-  // console.log(products)
+  useEffect(() => {
+    const getProducts = async () => {
+      const { data } = await supabase.from("products").select()
+      setProducts(data)
+      console.log(data)
+    }
+
+    getProducts()
+  }, [])
+  
   return (
     <div className="App">
       <BrowserRouter>

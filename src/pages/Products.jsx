@@ -27,7 +27,7 @@ const Products = ({products}) => {
           <div className="py-2  px-2">
             <div className="md:flex justify-end items-center gap-6 text-sm "> 
               <button onClick={() => setSelectedButton('Clothings')} className="py-3 btn uppercase">
-                Clothing and branding
+                Branded
               </button> 
               <button onClick={() => setSelectedButton('mechanized')}  className="md:mt-0 mt-3 py-3 btn uppercase">
                 Other services
