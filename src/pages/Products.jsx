@@ -1,16 +1,16 @@
 
 import ProductList from "../components/Products/ProductList";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
-const Products = ({products}) => {
+const Products = ({products, loading}) => {
   const [selectedButton, setSelectedButton] = useState('all');
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
-    if (selectedButton === 'Clothings') {
+    if (selectedButton === 'clothings') {
       setFilteredProducts(products.filter(product => product.product_type === 'Clothings'));
-    } else if (selectedButton === 'mechanized') {
+    } else if (selectedButton === 'merchandize') {
       setFilteredProducts(products.filter(product => product.product_type === 'mechanized'));
     } else {
       setFilteredProducts(products);
@@ -61,7 +61,7 @@ const Products = ({products}) => {
           </div>
         </div>        
           
-        <ProductList products={filteredProducts} />
+        <ProductList products={filteredProducts} loading={loading}/>
         
     </div>
     </>

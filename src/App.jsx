@@ -15,14 +15,23 @@ import Gallery from './pages/Gallery';
 import { useEffect, useState } from 'react';
 import { supabase } from './config/supabaseConfig';
 function App() {
-  // const { data: products } = UseFetch('http://localhost:3000/products')
   const [products, setProducts] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     const getProducts = async () => {
-      const { data } = await supabase.from("products").select()
-      setProducts(data)
-      console.log(data)
+      try {
+        const { data } = await supabase.from("products").select()
+        setProducts(data)
+        setLoading(false)
+        setError(false)
+        // console.log(data)
+      } catch (err) {
+        console.log(err)
+        setLoading(false)
+        setError(error)
+      }
     }
 
     getProducts()
@@ -33,10 +42,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={ <Home products={products} /> }/>
+          <Route path='/' element={ <Home products={products} loading={loading} /> }/>
           <Route path='/about' element={ <About /> }/>
-          <Route path='/products' element={ <Products products={products} /> }/>
-          <Route path='/products/:id' element={ <ProductDetails products={products} /> }/>
+          <Route path='/products' element={ <Products products={products} loading={loading}  /> }/>
+          <Route path='/products/:id' element={ <ProductDetails products={products} loading={loading} /> }/>
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/admin' element={ <Login /> }/>
           <Route path='/contact' element={ <Contact /> }/>

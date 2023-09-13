@@ -10,7 +10,7 @@
   }
 
   .input {
-    @apply px-3 py-2 text-gray-500 bg-gray-100 focus:bg-white rounded-full w-full border-2 border-[#084E7A] outline-none focus-within:border-[#084e7a] focus-within:shadow-md 
+    @apply px-3 py-2 text-gray-500 bg-gray-100 focus:bg-white rounded-lg w-full border-2 border-[#084E7A] outline-none focus-within:border-[#084e7a] focus-within:shadow-md 
   }
 
   .navlink {
