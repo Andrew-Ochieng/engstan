@@ -20,7 +20,7 @@ const ProductList = ({products, loading}) => {
                       </Link>
                     </div>
                     <div className="px-4 py-3 bg-[#084E7A] rounded-b-2xl">
-                      <h3 className="font-semibold">{product.name}</h3>
+                      <h3 className="font-semibold">{product.name.slice(0,16)}...</h3>
                       <div className="flex items-center justify-between">
                         <p className=" text-gray-200">Ksh { product.price }</p>
                         <button className="btn uppercase font-bold tracking-wide text-sm mt-2">
