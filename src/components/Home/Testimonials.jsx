@@ -1,6 +1,6 @@
 import Testimonialcard from "../Home/Testimonialcard";
 import { Splide } from "@splidejs/react-splide";
-import '@splidejs/react-splide/css/skyblue';
+import '@splidejs/react-splide/css';
 import { testimonialCarousel } from "../../utils/Carousel";
 
 const Testimonials = () => {

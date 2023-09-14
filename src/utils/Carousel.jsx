@@ -10,7 +10,7 @@ const testimonialCarousel = {
     pagination: false,
     drag: true,
     breakpoints: {
-      340: {
+      360: {
           perPage: 1,
           perMove: 1,
           },

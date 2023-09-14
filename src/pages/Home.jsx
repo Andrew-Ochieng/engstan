@@ -15,11 +15,11 @@ const Home = ({products, loading}) => {
               {loading ? (
                 <div className="h-32">Loading Prodcts...</div>
               ) : (
-                <ProductList products={products.slice(0,8)}/>
+                <ProductList products={products.slice(0,8)  }/>
               )}
             </div> 
             <div className="flex items-center justify-center md:mt-16 mt-8">
-              <Link to='/products' className="btn ">View All Products</Link>
+              <Link to='/clothings' className="btn ">View All Products</Link>
             </div>
           </div>
           <Testimonials />

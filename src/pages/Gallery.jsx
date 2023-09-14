@@ -30,46 +30,19 @@ import lm from "../assets/images/lm.jpg";
 import mn from "../assets/images/mn.jpg";
 import op from "../assets/images/op.jpg";
 import overall from  "../assets/images/overall1.png";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 const Gallery = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const products = [cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,cd,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall];
-
-  const handleBackButtonClick = () => {
-    setCurrentImageIndex(currentImageIndex === 0 ? products.length - 1 : currentImageIndex - 1);
-  };
-
-  const handleForwardButtonClick = () => {
-    setCurrentImageIndex(currentImageIndex === products.length - 1 ? 0 : currentImageIndex + 1);
-  };
 
   return (
     <div className="flex justify-center items-center mx-6 md:my-12 my-8">
-      <div className="flex justify-center items-center w-full ">
-        <div className="relative">
-          <div className='md:mx-48 mx-4 '>
+      <div className='md:mx-48 mx-4 '>
             <img
-              src={products[currentImageIndex]}
+              src={products}
               alt="Gallery"
               className="w-full md:h-96 h-80 object-cover bg-cover rounded-lg"
             />
           </div>
-          <button
-            className="left-0 carousel-btn"
-            onClick={handleBackButtonClick}
-          >
-            <FaChevronLeft />
-          </button>
-          <button
-            className="right-0 carousel-btn"
-            onClick={handleForwardButtonClick}
-          >
-            <FaChevronRight />
-          </button>
-        </div>
-      </div>
     </div>
   );
 };

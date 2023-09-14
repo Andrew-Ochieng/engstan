@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Products from './pages/Products';
+import Clothings from './pages/Clothings';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import UseFetch from './components/UseFetch';
@@ -12,6 +12,7 @@ import ProductDetails from './components/Products/ProductDetails';
 import Addproducts from './pages/Admin/Addproducts';
 import AdminProduct from './components/Admin/AdminProduct';
 import Gallery from './pages/Gallery';
+import Merchandize from './pages/Merchandize';
 import { useEffect, useState } from 'react';
 import { supabase } from './config/supabaseConfig';
 function App() {
@@ -22,11 +23,14 @@ function App() {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const { data } = await supabase.from("products").select()
+        const { data } = await supabase
+          .from("products")
+          .select()
+          .order("id", {ascending: true})
+
         setProducts(data)
         setLoading(false)
         setError(false)
-        // console.log(data)
       } catch (err) {
         console.log(err)
         setLoading(false)
@@ -44,8 +48,9 @@ function App() {
         <Routes>
           <Route path='/' element={ <Home products={products} loading={loading} /> }/>
           <Route path='/about' element={ <About /> }/>
-          <Route path='/products' element={ <Products products={products} loading={loading}  /> }/>
+          <Route path='/clothings' element={ <Clothings products={products.filter((item) => item.product_type == "clothings")} loading={loading}  /> }/>
           <Route path='/products/:id' element={ <ProductDetails products={products} loading={loading} /> }/>
+          <Route path='/merchandize' element={ <Merchandize products={products} loading={loading} /> } />
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/admin' element={ <Login /> }/>
           <Route path='/contact' element={ <Contact /> }/>

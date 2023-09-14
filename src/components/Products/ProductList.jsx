@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const ProductList = ({products, loading}) => {
+  console.log(products)
     return ( 
         <>
           {loading ? (
@@ -22,8 +23,15 @@ const ProductList = ({products, loading}) => {
                       <h3 className="font-semibold">{product.name}</h3>
                       <div className="flex items-center justify-between">
                         <p className=" text-gray-200">Ksh { product.price }</p>
-                        <button className="btn text-sm mt-2">
-                          Add to Cart
+                        <button className="btn uppercase font-bold tracking-wide text-sm mt-2">
+                          <a 
+                            href="https://api.whatsapp.com/send?phone=254769188331" 
+                            method="get" 
+                            target="_blank"
+                            rel="noreferrer"
+                            >
+                              Order
+                            </a>
                         </button>
                       </div>
                     </div>

@@ -6,11 +6,12 @@ const Footer = () => {
     const newYear = year.getFullYear()
 
     const footerLink = [
-        {name: "Home", to: "/" },
-        {name: "About", ref: "/about"},
-        {name: "Products & Services", ref: "/products"},
-        {name: "Gallery", ref: "/gallery"},
-        {name: "Contact", ref: "/contact"},
+        {id: 1, name: "Home", route: "/" },
+        {id: 2, name: "About", route: "/about"},
+        {id: 3, name: "Clothings", route: "/clothings"},
+        {id: 4, name: "Merchandize", route: "/merchandize"},
+        {id: 5, name: "Gallery", route: "/gallery"},
+        {id: 6, name: "Contact", route: "/contact"},
     ]
 
     return ( 
@@ -32,10 +33,10 @@ const Footer = () => {
                     </div>
 
                     <div className="md:my-0 my-2">
-                        <ul className="flex justify-center items-center md:text-base text-sm ">
+                        <ul className="md:flex justify-center items-center md:text-base text-sm ">
                             {footerLink.map((link) => (
-                                <li key={link.name} className="navlink md:mx-4 mx-2 text-white font-light">
-                                    <Link to={link.ref}>
+                                <li key={link.name} className="navlink md:mx-4 mx-2 md:my-0 my-2 text-white font-light">
+                                    <Link to={link.route}>
                                         {link.name}
                                     </Link>
                                 </li>
