@@ -90,75 +90,75 @@ const  galleryImages = [
         path: tshirt1
     },
     {
-        id: 16,
+        id: 15,
         path: tshirt3
     },
     {
-        id: 17,
+        id: 16,
         path: tshirt4
     },
     {
-        id: 18,
+        id: 17,
         path: tshirt5
     },
     {
-        id: 19,
+        id: 18,
         path: tshirt6
     },
     {
-        id: 20,
+        id: 19,
         path: overall
     },
     {
-        id: 21,
+        id: 20,
         path: ab
     },
     {
-        id: 22,
+        id: 21,
         path: bc
     },
     {
-        id: 23,
+        id: 22,
         path: cd
     },
     {
-        id: 24,
+        id: 23,
         path: ef
     },
     {
-        id: 25,
+        id: 24,
         path: fg
     },
     {
-        id: 26,
+        id: 25,
         path: gh
     },
     {
-        id: 27,
+        id: 26,
         path: hi
     },
     {
-        id: 28,
+        id: 27,
         path: jk
     },
     {
-        id: 29,
+        id: 28,
         path: knha
     },
     {
-        id: 30,
+        id: 29,
         path: lm
     },
     {
-        id: 31,
+        id: 30,
         path: mn
     },
     {
-        id: 32,
+        id: 31,
         path: op
     },
     {
-        id: 33,
+        id: 32,
         path: book
     },
 ]
