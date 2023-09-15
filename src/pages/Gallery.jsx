@@ -1,48 +1,27 @@
-import React, { useState }  from 'react';
-import cap from "../assets/images/cap.jpg";
-import hood from "../assets/images/hood.jpg";
-import hood2 from "../assets/images/hood2.jpg";
-import officeshirt from "../assets/images/officeshirt.jpg";
-import polo1 from "../assets/images/polo1.jpg";
-import polo2 from "../assets/images/polo2.jpg";
-import reflector from  "../assets/images/reflector.jpg";
-import hood3 from "../assets/images/hood3.jpg";
-import truck from "../assets/images/truck.jpg";
-import tshirt from "../assets/images/tshirt.jpg";
-import tshirt1 from "../assets/images/tshirt1.jpg";
-import tshirt3 from "../assets/images/tshirt3.jpg";
-import tshirt4 from "../assets/images/tshirt4.jpg";
-import tshirt5 from "../assets/images/tshirt5.jpg";
-import tshirt6 from  "../assets/images/tshirt6.jpg";
-import ab from "../assets/images/ab.jpg";
-import bc from "../assets/images/bc.jpg";
-import book from "../assets/images/book2.jpg";
-import cd from "../assets/images/cd.jpg";
-import ef from "../assets/images/ef.jpg";
-import fg from "../assets/images/fg.jpg";
-import gh from "../assets/images/gh.jpg";
-import hi from "../assets/images/hi.jpg";
-import hood4 from "../assets/images/hood4.jpg";
-import hood5 from "../assets/images/hood5.jpg";
-import jk from "../assets/images/jk.jpg";
-import knha from "../assets/images/knha.jpg";
-import lm from "../assets/images/lm.jpg";
-import mn from "../assets/images/mn.jpg";
-import op from "../assets/images/op.jpg";
-import overall from  "../assets/images/overall1.png";
+import { galleryImages } from "../data/gallery";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import '@splidejs/react-splide/css';
+import { galleryCarousel } from "../utils/Carousel";
 
 const Gallery = () => {
-  const products = [cap,hood,hood2,officeshirt,polo1,polo2,reflector,hood3,truck,tshirt,tshirt3,tshirt4,tshirt5,tshirt6,tshirt1,ab,bc,book,cd,ef,fg,gh,hi,hood4,hood5,jk,knha,lm,mn,op,overall];
-
+  
   return (
     <div className="flex justify-center items-center mx-6 md:my-12 my-8">
-      <div className='md:mx-48 mx-4 '>
-            <img
-              src={products}
-              alt="Gallery"
-              className="w-full md:h-96 h-80 object-cover bg-cover rounded-lg"
-            />
-          </div>
+      <Splide 
+        options={galleryCarousel}
+      >
+        {galleryImages.map((image, index) => (
+          <SplideSlide>
+            <div key={index}>
+              <img
+                src={image.path}
+                alt="Gallery image"
+                className="md:h-72 h-64 object-cover rounded-lg  "
+              />
+            </div>
+          </SplideSlide>
+        ))}  
+      </Splide>
     </div>
   );
 };

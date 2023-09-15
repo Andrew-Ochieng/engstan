@@ -15,6 +15,7 @@ import Gallery from './pages/Gallery';
 import Merchandize from './pages/Merchandize';
 import { useEffect, useState } from 'react';
 import { supabase } from './config/supabaseConfig';
+import { ScrollToTop } from './components/ScrollToTop';
 function App() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -44,6 +45,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' element={ <Home products={products} loading={loading} /> }/>
