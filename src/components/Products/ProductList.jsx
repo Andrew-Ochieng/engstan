@@ -1,21 +1,30 @@
 import { Link } from "react-router-dom";
+import { GridLoader } from "react-spinners";
 
 const ProductList = ({products, loading}) => {
-  console.log(products)
+
     return ( 
         <>
           {loading ? (
-            <div className="h-32">Loading Products...</div>
+            <div className="flex items-center justify-center md:my-48 my-24">
+              <GridLoader 
+                  color="#084E7A" 
+                  loading={loading}
+                  size={20}
+                  aria-label="Loading Content..."
+                  data-testid="loader"
+              />
+            </div>
           ) : (
-            <div className="grid md:grid-cols-4 sm:grid-cols-2 md:gap-10 gap-8 md:my-16 my-8">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 xl:gap-10 md:gap-8 gap-6 md:my-16 my-8">
               {products.map((product, index) => (
                   <div key={index} className="rounded-2xl shadow-lg hover:shadow-xl">
-                    <div className="p-3 border-2 border-[#084E7A] rounded-t-2xl">
+                    <div className="p-2 border-2 border-[#084E7A] rounded-t-2xl">
                       <Link to={`/products/${product.id}`}>
                         <img 
                           src={product.plain_image_url} 
                           alt="" 
-                          className='thumb p-2 rounded-2xl hover:scale-110 duration-500'
+                          className='thumb p-2 rounded-2xl hover:scale-90 duration-500'
                           />
                       </Link>
                     </div>

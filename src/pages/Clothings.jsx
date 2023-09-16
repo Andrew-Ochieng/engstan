@@ -1,7 +1,5 @@
-
 import { useState } from "react";
 import ProductList from "../components/Products/ProductList";
-// import { useState, useEffect } from 'react';
 
 
 const Clothings = ({products, loading}) => {
@@ -15,17 +13,15 @@ const Clothings = ({products, loading}) => {
 
   return ( 
     <>
-      <div className="md:mx-32 mx-6 my-8">
-        <div className="">
-          <div>
-              <input 
-                onChange={handleSearch}
-                value={search}
-                className="input" 
-                placeholder="Search products..." 
-                type='search'
-              />
-            </div>
+      <div className="xl:mx-32 md:mx-16  mx-6 my-8">
+        <div className="flex items-center justify-center">
+          <input 
+            onChange={handleSearch}
+            value={search}
+            className="input" 
+            placeholder="Search products..." 
+            type='search'
+          />
         </div>
 
         <ProductList products={filteredProducts} loading={loading}/>

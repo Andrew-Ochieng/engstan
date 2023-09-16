@@ -6,7 +6,6 @@ import About from './pages/About';
 import Clothings from './pages/Clothings';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import UseFetch from './components/UseFetch';
 import Login from './pages/Admin/Login';
 import ProductDetails from './components/Products/ProductDetails';
 import Addproducts from './pages/Admin/Addproducts';
@@ -33,7 +32,6 @@ function App() {
         setLoading(false)
         setError(false)
       } catch (err) {
-        console.log(err)
         setLoading(false)
         setError(error)
       }
@@ -50,9 +48,25 @@ function App() {
         <Routes>
           <Route path='/' element={ <Home products={products} loading={loading} /> }/>
           <Route path='/about' element={ <About /> }/>
-          <Route path='/clothings' element={ <Clothings products={products.filter((item) => item.product_type == "clothings")} loading={loading}  /> }/>
+          <Route 
+            path='/clothings' 
+            element={ 
+              <Clothings 
+                loading={loading}
+                products={products.filter((item) => item.product_type == "clothings")} 
+              /> 
+            }
+          />
           <Route path='/products/:id' element={ <ProductDetails products={products} loading={loading} /> }/>
-          <Route path='/merchandize' element={ <Merchandize products={products} loading={loading} /> } />
+          <Route 
+            path='/merchandize' 
+            element={ 
+              <Merchandize 
+                loading={loading}
+                products={products.filter((item) => item.product_type == "merchandize")} 
+              /> 
+            } 
+          />
           <Route path='/contact' element={ <Contact /> }/>
           <Route path='/admin' element={ <Login /> }/>
           <Route path='/contact' element={ <Contact /> }/>

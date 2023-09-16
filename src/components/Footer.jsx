@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
             </div>
             <footer className="bg-[#C70B38] opacity-90 md:py-24 py-12 md:px-32 px-8 text-white">
-                <div className="md:flex md:justify-between justify-center items-center text-center mb-8 md:text-base text-sm">
+                <div className="md:flex md:justify-between justify-center items-center md:text-center mb-8 md:text-base text-sm">
                     <div>
                         <h1 className="md:text-lg font-medium">Engstan Solutions</h1>
                     </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                     <div className="md:my-0 my-2">
                         <ul className="md:flex justify-center items-center md:text-base text-sm ">
                             {footerLink.map((link) => (
-                                <li key={link.name} className="navlink md:mx-4 mx-2 md:my-0 my-2 text-white font-light">
+                                <li key={link.name} className="navlink md:mx-4 md:my-0 my-2 text-white font-light">
                                     <Link to={link.route}>
                                         {link.name}
                                     </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="flex flex-col sm:flex-row">
-                        <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start  md:text-2xl text-xl">
+                        <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 md:text-2xl text-xl">
                             <a href="https://www.facebook.com/100053209607083" className="md:mx-4 mx-2 text-blue-500 hover:text-white">
                                 <FaFacebook />
                             </a>
@@ -61,7 +61,7 @@ const Footer = () => {
 
             <div className="bg-[#C70B38] text-white md:py-8 py-4 md:px-32 px-8 flex justify-center items-center text-sm">
                 <p>Copyright &copy; <span className="font-medium">{newYear}</span> | 
-                    <Link to='/' className="ml-1 text-gray-800"> 
+                    <Link to='/' className="ml-1 text-blue-500"> 
                         Engstan Solutions
                     </Link>
                 </p>

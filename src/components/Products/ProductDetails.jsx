@@ -1,5 +1,6 @@
 import { HiShoppingCart } from "react-icons/hi";
 import { useParams } from "react-router-dom";
+import { GridLoader } from "react-spinners";
 
 const ProductDetails = ({products, loading}) => {
     const { id } = useParams()
@@ -9,7 +10,6 @@ const ProductDetails = ({products, loading}) => {
     if (product) {
         const arr = products.filter((item) => item.id == paramsId)
         product = arr[0] 
-        console.log(product)
     } else {
         product = {}
     }
@@ -21,7 +21,15 @@ const ProductDetails = ({products, loading}) => {
                 {/* { error && <h4 className="text-[#C70B38]">{ error }</h4>} */}
 
                 {loading ? (
-                    <div>Loading Product Details...</div>
+                    <div className="flex items-center justify-center md:my-48 my-24">
+                        <GridLoader 
+                            color="#084E7A" 
+                            loading={loading}
+                            size={20}
+                            aria-label="Loading Content..."
+                            data-testid="loader"
+                        />
+                    </div>
                 ) : (
                     <div className="grid md:grid-cols-2 grid-cols-1">
                         <div className="">
