@@ -1,8 +1,6 @@
 import cap from "../assets/images/cap.jpg";
 import hood from "../assets/images/hood.jpg";
 import hood2 from "../assets/images/hood2.jpg";
-import hood3 from "../assets/images/hood3.jpg";
-import hood4 from "../assets/images/hood4.jpg";
 import hood5 from "../assets/images/hood5.jpg";
 import officeshirt from "../assets/images/officeshirt.jpg";
 import polo1 from "../assets/images/polo1.jpg";
@@ -14,7 +12,6 @@ import tshirt1 from "../assets/images/tshirt1.jpg";
 import tshirt3 from "../assets/images/tshirt3.jpg";
 import tshirt4 from "../assets/images/tshirt4.jpg";
 import tshirt5 from "../assets/images/tshirt5.jpg";
-import tshirt6 from  "../assets/images/tshirt6.jpg";
 import overall from  "../assets/images/overall1.png";
 
 // merchandize
@@ -47,78 +44,62 @@ const  galleryImages = [
     },
     {
         id: 4,
-        path: hood3
-    },
-    {
-        id: 5,
-        path: hood4
-    },
-    {
-        id: 6,
         path: hood5
     },
     {
-        id: 7,
+        id: 5,
         path: officeshirt
     },
     {
-        id: 8,
+        id: 6,
         path: polo1
     },
     {
-        id: 9,
+        id: 7,
         path: polo2
     },
     {
-        id: 10,
+        id: 8,
         path: reflector
     },
     {
-        id: 11,
-        path: hood3
-    },
-    {
-        id: 12,
+        id: 9,
         path: truck
     },
     {
-        id: 13,
+        id: 10,
         path: tshirt
     },
     {
-        id: 14,
+        id: 11,
         path: tshirt1
     },
     {
-        id: 15,
+        id: 12,
         path: tshirt3
     },
     {
-        id: 16,
+        id: 13,
         path: tshirt4
     },
     {
-        id: 17,
+        id: 14,
         path: tshirt5
     },
     {
-        id: 18,
-        path: tshirt6
-    },
-    {
-        id: 19,
+        id: 15,
         path: overall
     },
     {
-        id: 20,
+        id: 16,
         path: ab
     },
     {
-        id: 21,
+        id: 17,
         path: bc
     },
     {
-        id: 22,
+        id: 18,
         path: cd
     },
     {
@@ -126,23 +107,23 @@ const  galleryImages = [
         path: ef
     },
     {
-        id: 24,
+        id: 18,
         path: fg
     },
     {
-        id: 25,
+        id: 19,
         path: gh
     },
     {
-        id: 26,
+        id: 20,
         path: hi
     },
     {
-        id: 27,
+        id: 21,
         path: jk
     },
     {
-        id: 28,
+        id: 22,
         path: knha
     },
     {
@@ -150,15 +131,15 @@ const  galleryImages = [
         path: lm
     },
     {
-        id: 30,
+        id: 23,
         path: mn
     },
     {
-        id: 31,
+        id: 24,
         path: op
     },
     {
-        id: 32,
+        id: 25,
         path: book
     },
 ]

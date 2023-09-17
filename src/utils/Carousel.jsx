@@ -43,7 +43,7 @@ const galleryCarousel = {
   pauseOnHover: false,
   pauseOnFocus: false,
   arrows: true,
-  pagination: true,
+  pagination: false,
   drag: true,
   breakpoints: {
     360: {
