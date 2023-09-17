@@ -56,6 +56,11 @@ const Navbar = () => {
                         </button> 
                     </div>
                     <ul className="flex flex-col text-base font-medium space-y-8">
+                        <li className="navlink md:mx-4 mx-2 md:my-0 my-2">
+                            <Link to='/'>
+                                Home
+                            </Link>
+                        </li>
                         {navLinks.map((nav) => (
                             <li key={nav.id} onClick={() => setOpen((prev) => !prev)} className="navlink md:mx-4 mx-2 md:my-0 my-2">
                                 <Link to={nav.route}>
@@ -63,7 +68,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         ))}
-                        <button onClick={() => setOpen((prev) => !prev)} className="btn md:mx-4 mx-2 md:my-0 my-2 ">
+                        <button onClick={() => setOpen((prev) => !prev)} className='btn w-fit md:mx-4 md:my-0 my-2'>
                             <Link to='/contact'>
                                 Contact
                             </Link>

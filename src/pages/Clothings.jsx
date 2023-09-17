@@ -13,8 +13,8 @@ const Clothings = ({products, loading}) => {
 
   return ( 
     <>
-      <div className="xl:mx-32 md:mx-16  mx-6 my-8">
-        <div className="flex items-center justify-center">
+      <div className="xl:mx-32 md:mx-16 mx-4 my-8">
+        <div className="flex items-center justify-center ">
           <input 
             onChange={handleSearch}
             value={search}

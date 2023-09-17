@@ -16,23 +16,22 @@ const ProductList = ({products, loading}) => {
               />
             </div>
           ) : (
-            <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 xl:gap-10 md:gap-8 gap-6 md:my-16 my-8">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-8 gap-4 md:my-16 my-8">
               {products.map((product, index) => (
-                  <div key={index} className="rounded-2xl shadow-lg hover:shadow-xl">
-                    <div className="p-2 border-2 border-[#084E7A] rounded-t-2xl">
+                  <div key={index} className="rounded-2xl shadow-lg hover:shadow-xl md:px-4 p-2 md:py-3  border-2 border-[#084E7A] hover:bg-[#084E7A] hover:text-white duration-500">
+                    <div className="flex justify-center rounded-t-2xl">
                       <Link to={`/products/${product.id}`}>
                         <img 
                           src={product.plain_image_url} 
                           alt="" 
-                          className='thumb p-2 rounded-2xl hover:scale-90 duration-500'
+                          className='xl:h-48 lg:h-44 md:h-40 h-24 rounded-2xl hover:scale-90 duration-700 ease-in-out'
                           />
                       </Link>
                     </div>
-                    <div className="px-4 py-3 bg-[#084E7A] rounded-b-2xl">
-                      <h3 className="font-semibold">{product.name.slice(0,16)}...</h3>
-                      <div className="flex items-center justify-between">
-                        <p className=" text-gray-200">Ksh { product.price }</p>
-                        <button className="btn uppercase font-bold tracking-wide text-sm mt-2">
+                    <div className="pt-2">
+                      <h3 className="font-semibold md:text-base text-sm hover:text-gray-200">{product.name.replace(/^(.{10}[^\s]*).*/, "$1") + "\n"}...</h3>
+                      <p className=" md:text-base text-sm">Ksh { product.price }</p>
+                      <button className="btn uppercase font-bold tracking-wide text-sm mt-2">
                           <a 
                             href="https://api.whatsapp.com/send?phone=254769188331" 
                             method="get" 
@@ -42,7 +41,6 @@ const ProductList = ({products, loading}) => {
                               Order
                             </a>
                         </button>
-                      </div>
                     </div>
                     
                   </div>

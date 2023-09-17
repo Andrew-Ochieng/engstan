@@ -4,13 +4,19 @@ import Reachout from "../components/Home/Reachout";
 import Testimonials from "../components/Home/Testimonials";
 import ProductList from "../components/Products/ProductList";
 import { GridLoader } from "react-spinners";
+import { Splide } from "@splidejs/splide";
+import { SplideSlide } from "@splidejs/react-splide";
+import '@splidejs/react-splide/css';
+import { galleryCarousel } from "../utils/Carousel";
+import Categories from "../components/Home/Categories";
 
 const Home = ({products, loading}) => {
   return ( 
     <>
       <div className=''>
           <Hero />
-          <div className="md:px-32 px-6 md:py-16 py-8">
+          <Categories products={products} />
+          <div className="md:px-28 sm:px-16 px-4 md:py-16 py-8">
             <h2 className="content-title text-center">Our Products</h2>
             <div>
               {loading ? (

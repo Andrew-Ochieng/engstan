@@ -26,7 +26,7 @@ const Footer = () => {
                 <FaWhatsapp />
             </a>
             </div>
-            <footer className="bg-[#C70B38] opacity-90 md:py-24 py-12 md:px-32 px-8 text-white">
+            <footer className="bg-[#C70B38] opacity-90 md:py-24 py-12 md:px-32 px-8 text-white text-center">
                 <div className="md:flex md:justify-between justify-center items-center md:text-center mb-8 md:text-base text-sm">
                     <div>
                         <h1 className="md:text-lg font-medium">Engstan Solutions</h1>
@@ -43,7 +43,7 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="flex flex-col sm:flex-row">
+                    <div className="flex flex-col sm:flex-row items-center">
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 md:text-2xl text-xl">
                             <a href="https://www.facebook.com/100053209607083" className="md:mx-4 mx-2 text-blue-500 hover:text-white">
                                 <FaFacebook />
