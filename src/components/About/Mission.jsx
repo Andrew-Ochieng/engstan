@@ -8,8 +8,8 @@ const Mission = () => {
             <div className="md:mb-16 mb-8 lg:mx-64 md:mx-32 mx-6 grid sm:grid-cols-2 md:gap-16 gap-8">
                 {missions.map((item) => (
                     <div className="">
-                        <h2 className="md:my-4 my-2 text-[#C70B38] content-title">{item.title}</h2>
-                        <div className="bg-[#084E7A] md:p-8 p-4 rounded-lg text-white font-light">
+                        <h2 className="md:my-4 my-2 text-[#C70B38] md:text-xl text-lg font-semibold">{item.title}</h2>
+                        <div className="border-2 border-[#084E7A] hover:bg-[#084E7A] shadow-lg hover:shadow-xl duration-500 md:px-6 px-4 md:py-4 py-3 rounded-xl text-gray-500 hover:text-white ">
                             {item.content}
                         </div>
                     </div>

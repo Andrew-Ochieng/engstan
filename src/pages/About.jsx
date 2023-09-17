@@ -2,6 +2,7 @@ import Chooseus from "../components/About/Chooseus";
 import Corevalues from "../components/About/Corevalues";
 import Mission from "../components/About/Mission";
 import Whoweare from "../components/About/Whoweare";
+import aboutHeroImg from "../assets/about.jpg"
 
 const About = () => {
     return ( 
@@ -9,7 +10,7 @@ const About = () => {
             <div>
                 <div className="" 
                     style={{
-                            backgroundImage: `url("https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/entry/2020-11-04/GettyImages-678074927.jpg?pw=1200")`, 
+                            backgroundImage: `url(${aboutHeroImg})`, 
                             backgroundSize: `cover`,
                             paddingTop: `100px`, 
                             paddingBottom: `100px` 

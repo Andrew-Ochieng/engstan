@@ -5,8 +5,6 @@ const Categories = ({products}) => {
     const clothingsArr = products.filter((item) => item.product_type == 'clothings').length
     const merchandizeArr = products.filter((item) => item.product_type == 'merchandize').length
 
-    console.log(clothingsArr)
-    console.log(merchandizeArr)
     return ( 
         <>
             <div className="flex items-center justify-center md:gap-8 gap-4 md:mt-16 mt-8 md:px-28 sm:px-16 px-4">

@@ -20,7 +20,7 @@ const Contactdetails = () => {
         <>
             <div className="grid grid-cols-1 md:gap-8 gap-4 md:mt-0 mt-8">
                 <div 
-                    class="flex items-center rounded-lg bg-white ease-out duration-300 md:px-5 px-3 shadow-lg hover:shadow-xl">
+                    class="flex items-center rounded-lg bg-white ease-out duration-300 md:px-5 px-3 md:py-0 py-4 shadow-lg hover:shadow-xl">
                     <span className="md:text-2xl text-xl bg-gray-100 rounded-full md:p-4 p-3 text-[#084E7A]">
                         <HiOutlineMail />
                     </span>
@@ -28,7 +28,7 @@ const Contactdetails = () => {
                 </div>
                 {contactInfo.map((info) => (
                     <div 
-                        class="flex items-center rounded-lg bg-white ease-out duration-300 md:px-5 px-3 shadow-lg hover:shadow-xl">
+                        class="flex items-center rounded-lg bg-white ease-out duration-300 md:px-5 px-3 md:py-0 py-4 shadow-lg hover:shadow-xl">
                         <span className="md:text-2xl text-xl bg-gray-100 rounded-full md:p-4 p-3 text-[#084E7A]">
                             <i>{info.icon}</i>
                         </span>
