@@ -54,7 +54,7 @@ const Footer = () => {
                             <a href="https://www.instagram.com/engstan_solutions/" className="md:mx-4 mx-2 text-blue-500 hover:text-white">
                                 <FaInstagram />
                             </a>
-                            <a href="https://www.instagram.com/engstan_solutions/" className="md:mx-4 mx-2 text-blue-500 hover:text-white">
+                            <a href="https://www.linkedin.com/company/engstan-solutions-ltd/" className="md:mx-4 mx-2 text-blue-500 hover:text-white">
                                 <FaLinkedinIn />
                             </a>
                         </span>
