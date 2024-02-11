@@ -30,7 +30,7 @@ const ProductList = ({products, loading}) => {
                     </div>
                     <div className="pt-2">
                       <h3 className="font-semibold md:text-base text-sm hover:text-gray-200">{product.name.replace(/^(.{10}[^\s]*).*/, "$1") + "\n"}...</h3>
-                      <p className=" md:text-base text-sm">Ksh { product.price }</p>
+                      <p className=" md:text-base text-sm">Ksh { product.plain_price }</p>
                       <button className="btn uppercase font-bold tracking-wide text-sm mt-2">
                           <a 
                             href="https://api.whatsapp.com/send?phone=254769188331" 
