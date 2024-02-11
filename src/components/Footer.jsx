@@ -1,5 +1,5 @@
 import { Link }  from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
     const  year = new Date()
@@ -53,6 +53,9 @@ const Footer = () => {
                             </a>
                             <a href="https://www.instagram.com/engstan_solutions/" className="md:mx-4 mx-2 text-blue-500 hover:text-white">
                                 <FaInstagram />
+                            </a>
+                            <a href="https://www.instagram.com/engstan_solutions/" className="md:mx-4 mx-2 text-blue-500 hover:text-white">
+                                <FaLinkedinIn />
                             </a>
                         </span>
                     </div>
