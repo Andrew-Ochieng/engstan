@@ -34,12 +34,12 @@ const ProductDetails = ({products, loading}) => {
                     <div className="grid md:grid-cols-2 grid-cols-1">
                         <div className="">
                             <h5 className="font-bold border-b-2 mb-4 pb-2 text-lg ">Plain</h5>
-                            <p className="text-xl my-6 text-[#C70B38]">Price: Ksh{ product.price }</p>
+                            <p className="text-xl my-6 text-[#C70B38]">Price: Ksh{ product.plain_price }</p>
                             <img className="md:w-72 md:h-72 h-60 w-60 rounded-lg" src={product.plain_image_url} alt="product thumb"/>
                         </div>
                         <div className="">
                             <h5 class="font-bold border-b-2 mb-4 pb-2 text-lg ">Branded</h5>
-                            <p className="text-xl my-6 text-[#C70B38]">Price: Ksh{ product.price + 300 }</p>
+                            <p className="text-xl my-6 text-[#C70B38]">Price: Ksh{ product.branded_price }</p>
                             <img className="md:w-72 md:h-72 h-60 w-60 rounded-lg" src={product.branded_image_url} alt="product thumb"/>
                         </div>
                         <div className="">
